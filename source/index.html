@@ -1,12 +1,152 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="page-header">
+      <a href="#" class="logo page-header__logo">
+        <img width="102" height="84" src="https://via.placeholder.com/150x150" alt="Логотип">
+      </a>
+      <div class="main-nav__wrapper">
+        <nav class="main-nav visually-hidden">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Форма Отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML ACADEMY</a>
+            </li>
+          </ul>
+          <!-- /.site-list -->
+        </nav>
+        <!-- /.main-nav -->
+      </div>
+      <!-- /.main-nav__wrapper -->
+    </header>
+    <!-- /.page-header -->
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <h1 class="visually-hidden">
+        Поиск отелей в городе СЕДОНА, штат Аризона.
+      </h1>
 
+      <section class="intro">
+        <header class="intro__header">
+          <h2 class="visually-hidden">
+            Приветствие
+          </h2>
+          <div class="intro__background"></div>
+        </header>
+        <p class="intro__text">
+          СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего! Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        </p>
+      </section>
+      <!-- /.intro -->
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantage">
+            <div class="advantage__header">
+              <h3 class="advantage__title">НАСТОЯЩИЙ ГОРОДОК</h3>
+              <p class="advantage__number">— №1 —</p>
+              <p class="advantage__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            </div>
+            <img class="advantage__img" src="https://via.placeholder.com/150x150" alt="Фото города">
+            <div class="advantage__details detail">
+              <div class="detail__item">
+                <div class="detail__header">
+                  <div class="detail__icon"></div>
+                  <p class="detail__title">ЖИЛЬЕ</p>
+                </div>
+                <p class="detail__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </div>
+              <div class="detail__item">
+                <div class="detail__header">
+                  <div class="detail__icon"></div>
+                  <p class="detail__title">СУВЕНИРЫ</p>
+                </div>
+                <p class="detail__description">Не только китайского, но и местного производства!</p>
+              </div>
+              <div class="detail__item">
+                <div class="detail__header">
+                  <div class="detail__icon"></div>
+                  <p class="detail__title">ЕДА</p>
+                </div>
+                <p class="detail__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+              </div>
+            </div>
+            <!-- /.advantage__details -->
+          </li>
+          <li class="advantages__item advantage">
+            <div class="advantage-header">
+              <h3 class="advantage__title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
+              <p class="advantage__number">— №2 —</p>
+              <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <img class="advantage__img" src="https://via.placeholder.com/150x150" alt="Фото города">
+          </li>
+          <li class="advantages__item advantage">
+            <div class="advantage-header">
+              <h3 class="advantage__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+              <p class="advantage__number">— №3 —</p>
+              <p class="advantage__description">ВСЕ интересные места находятся очень близко</p>
+            </div>
+          </li>
+          <li class="advantages__item advantage">
+            <div class="advantage-header">
+              <h3 class="advantage__title">КРАСИВАЯ ДОРОГА</h3>
+              <p class="advantage__number">— №4 —</p>
+              <p class="advantage__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+            </div>
+          </li>
+          <li class="advantages__item advantage">
+            <div class="advantage-header">
+              <h3 class="advantage__title">МАЛО ТУРИСТОВ</h3>
+              <p class="advantage__number">— №5 —</p>
+              <p class="advantage__description">Большинство едет в гранд каньони толпится там</p>
+            </div>
+          </li>
+        </ul>
+        <!-- /.advantages__list -->
+      </section>
+      <!-- /.advantages -->
+
+      <footer class="page-footer">
+        <b class="page-footer__hashtag">#visitSEDONA</b>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--twitter">Мы в Twitter</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--facebook">Мы на Facebook</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--youtube">Мы на YouTube</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.social -->
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <div class="copyright__icon"></div>
+        </div>
+        <!-- /.copyright -->
+      </footer>
+      <!-- /.page-footer -->
+    </main>
+    <!-- /.page-main -->
   </body>
 </html>
