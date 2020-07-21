@@ -1,7 +1,7 @@
-# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Петр Кириенко](https://up.htmlacademy.ru/adaptive/20/user/835565).
-* Наставник:[Алексей Чимочихин] (https://htmlacademy.ru/profile/id1449979). 
+* Наставник: [Алексей Чимочихин](https://htmlacademy.ru/profile/id1449979). 
 
 ---
 
