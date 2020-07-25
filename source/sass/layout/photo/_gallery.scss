@@ -1,0 +1,42 @@
+.gallery {
+  background-color: $bg-main;
+}
+
+.gallery__title {
+  font-weight: $weight-bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.gallery__text {
+  font-weight: $weight-norm;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.card-info__title {
+  font-weight: $weight-bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.card-info__author {
+  font-weight: $weight-norm;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.likes__counter {
+  font-weight: $weight-bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}

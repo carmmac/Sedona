@@ -1,0 +1,18 @@
+.page-header {
+  background-color: #ffffff;
+}
+
+.site-list__item {
+  background-color: #81B3D2;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
+    & a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: $weight-bold;
+      font-size: 18px;
+      line-height: 40px;
+      text-transform: uppercase;
+    }
+}
+
+

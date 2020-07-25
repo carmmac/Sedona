@@ -1,0 +1,23 @@
+.page-footer {
+  background-color: $bg-main;
+}
+
+.page-footer__hashtag {
+  font-weight: $weight-bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.social__item {
+  background-color: #81B3D2;;
+}
+
+.copyright__text {
+  font-weight: $weight-norm;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
