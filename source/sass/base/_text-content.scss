@@ -17,3 +17,9 @@
 .text-description--sub {
   line-height: 24px;
 }
+
+.text-copyright {
+  @include text-description;
+  line-height: 26px;
+  color: #000000;
+}
