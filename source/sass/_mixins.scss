@@ -1,0 +1,27 @@
+// ПРИМЕСИ
+
+@mixin text-title {
+  font-weight: $weight-bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+@mixin text-description {
+  font-weight: $weight-norm;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+@mixin button-style {
+  border: none;
+  background-color: #81B3D2;
+  font-weight: $weight-bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+}

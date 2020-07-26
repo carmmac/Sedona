@@ -2,21 +2,28 @@
 
     // ABSTRACT
 @import '_variables.scss';
+@import '_mixins.scss';
 
-    // RESET
-
+    // BASE
+@import 'base/_text-content.scss';
+@import 'base/_visibility.scss';
 
     // LAYOUT
 // global
 @import 'layout/_page__body.scss';
 @import 'layout/_page-header.scss';
-@import 'layout/page-footer.scss';
+@import 'layout/_page-footer.scss';
+@import 'layout/_page-intro.scss';
 
 // main page
-@import 'layout/index/intro.scss';
-@import 'layout/index/advantages';
+@import 'layout/index/_intro.scss';
+@import 'layout/index/_advantages.scss';
+@import 'layout/index/_booking.scss';
 
 // gallery page
-@import 'layout/photo/intro.scss';
-@import 'layout/photo/gallery.scss';
+@import 'layout/photo/_gallery.scss';
+
+
+    // COMPONENTS
+@import 'components/_button.scss';
 
