@@ -6,7 +6,6 @@
 
 // BASE
 @import "base/_text-content.scss";
-@import "base/_visibility.scss";
 
 // LAYOUT
 // global
@@ -18,7 +17,6 @@
 // main page
 @import "layout/index/_intro.scss";
 @import "layout/index/_advantages.scss";
-@import "layout/index/_booking.scss";
 
 // gallery page
 @import "layout/photo/_gallery.scss";
