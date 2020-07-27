@@ -1,7 +1,11 @@
+.advantages__item {
+  padding-bottom: 24px;
+}
+
 .advantage__header {
   background-color: #eeeeee;
   &--explicit {
-    background-color: #81b3d2;
+    background-color: $bg-second;
   }
 }
 
