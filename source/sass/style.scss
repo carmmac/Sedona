@@ -1,29 +1,28 @@
 // Начните писать стили здесь
 
-    // ABSTRACT
-@import '_variables.scss';
-@import '_mixins.scss';
+// ABSTRACT
+@import "_variables.scss";
+@import "_mixins.scss";
 
-    // BASE
-@import 'base/_text-content.scss';
-@import 'base/_visibility.scss';
+// BASE
+@import "base/_text-content.scss";
+@import "base/_visibility.scss";
 
-    // LAYOUT
+// LAYOUT
 // global
-@import 'layout/_page.scss';
-@import 'layout/_page-header.scss';
-@import 'layout/_page-footer.scss';
-@import 'layout/_page-intro.scss';
+@import "layout/_page.scss";
+@import "layout/_page-header.scss";
+@import "layout/_page-footer.scss";
+@import "layout/_page-intro.scss";
 
 // main page
-@import 'layout/index/_intro.scss';
-@import 'layout/index/_advantages.scss';
-@import 'layout/index/_booking.scss';
+@import "layout/index/_intro.scss";
+@import "layout/index/_advantages.scss";
+@import "layout/index/_booking.scss";
 
 // gallery page
-@import 'layout/photo/_gallery.scss';
+@import "layout/photo/_gallery.scss";
 
 
-    // COMPONENTS
-@import 'components/_button.scss';
-
+// COMPONENTS
+@import "components/_button.scss";
