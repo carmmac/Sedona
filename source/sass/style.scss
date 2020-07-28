@@ -5,22 +5,26 @@
 @import "_mixins.scss";
 
 // BASE
-@import "base/_text-content.scss";
+@import "base/normalize.scss";
+@import "base/text-content.scss";
 
 // LAYOUT
 // global
-@import "layout/_page.scss";
-@import "layout/_page-header.scss";
-@import "layout/_page-footer.scss";
-@import "layout/_page-intro.scss";
+@import "layout/page.scss";
+@import "layout/page-header.scss";
+@import "layout/site-list.scss";
+@import "layout/page-intro.scss";
+@import "layout/page-footer.scss";
+
 
 // main page
-@import "layout/index/_intro.scss";
-@import "layout/index/_advantages.scss";
+@import "layout/index/intro.scss";
+@import "layout/index/advantages.scss";
+@import "layout/index/detail.scss";
 
 // gallery page
-@import "layout/photo/_gallery.scss";
+@import "layout/photo/gallery.scss";
 
 
 // COMPONENTS
-@import "components/_button.scss";
+@import "components/button.scss";

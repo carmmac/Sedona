@@ -1,0 +1,25 @@
+.text-title {
+  @include text-title;
+
+  &--promo {
+    font-size: 21px;
+  }
+}
+
+.text-description {
+  @include text-description;
+
+  &--promo {
+    line-height: 26px;
+  }
+
+  &--sub {
+    line-height: 24px;
+  }
+}
+
+.text-copyright {
+  @include text-description;
+  line-height: 26px;
+  color: #000000;
+}

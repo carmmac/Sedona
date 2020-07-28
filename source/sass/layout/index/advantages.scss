@@ -1,0 +1,39 @@
+.advantage__header {
+  background-color: #eeeeee;
+
+  &--explicit {
+    background-color: $bg-second;
+  }
+}
+
+.advantage__title {
+  margin-top: 0;
+  margin-bottom: 11px;
+
+  &--explicit {
+    color: #ffffff;
+  }
+}
+
+.advantage__number {
+  margin-top: 0;
+  margin-bottom: 17px;
+
+  &--explicit {
+    color: #ffffff;
+  }
+}
+
+.advantage__description {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  &--explicit {
+    color: #ffffff;
+  }
+}
+
+.advantage__details {
+  margin: 0;
+  padding: 26px 11px 35px 18px;
+}

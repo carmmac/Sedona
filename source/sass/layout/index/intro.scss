@@ -1,14 +1,15 @@
 .intro__background {
   background-image: url("../../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-color: $bg-main;
 }
 
 .intro__description {
   margin-top: 32px;
   margin-bottom: 11px;
-  background-color: $bg-main;
 }
 
 .intro__decoration {
+  margin-top: 0;
   margin-bottom: -21px;
 }

@@ -18,10 +18,8 @@
 
 @mixin button-style {
   border: none;
-  background-color: $bg-second;
   font-weight: $weight-bold;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #ffffff;
 }
