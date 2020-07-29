@@ -10,6 +10,6 @@ $bg-main: #ffffff;
 $bg-second: #81b3d2;
 
 // Viewports
-$tablet-width: 768px;
-$desktop-width: 1200px;
-$mobile-width-only: 767px;
+$mobile-width-min: 320px;
+$tablet-width-min: 667px;
+$desktop-width-min: 1200px;
