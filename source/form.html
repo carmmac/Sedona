@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -16,16 +17,16 @@
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="#">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Фото и видео</a>
+            <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Форма Отзыва</a>
+            <a class="site-list__link" href="#">Форма Отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML ACADEMY</a>
+            <a class="site-list__link" href="#">HTML ACADEMY</a>
           </li>
         </ul>
         <!-- /.site-list -->
@@ -41,21 +42,21 @@
       Форма отзыва
     </h1>
     <div class="review-intro page-intro">
-      <img src="https://via.placeholder.com/150x150" alt="SEDONA" class="page-intro__img">
+      <img src="img/text-sedona.svg" alt="SEDONA" class="page-intro__img">
     </div>
 
     <section class="review">
       <div class="review-wrapper">
         <div class="review__header">
-          <h2 class="review__header-title">Оставьте свой отзыв</h2>
-          <p class="review__header-text">
+          <h2 class="review__header-title text-title">Оставьте свой отзыв</h2>
+          <p class="review__header-text text-description text-description--sub">
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
         </div>
         <!-- /.review__header -->
         <form action="https://echo.htmlacademy.ru" method="POST" class="review-form">
           <div class="review-form__group form-group">
-            <h2 class="form-group__title">Представьтесь:</h2>
+            <h2 class="form-group__title text-title">Представьтесь:</h2>
             <div class="form-group__item">
               <label for="firstname" class="label label--text">ИМЯ*:</label>
               <div class="form-group__fields">
@@ -77,7 +78,7 @@
           </div>
           <!-- /.form-group -->
           <div class="review-form__group form-group">
-            <h2 class="form-group__title">Контактная информация:</h2>
+            <h2 class="form-group__title text-title">Контактная информация:</h2>
             <div class="form-group__item">
               <label for="tel" class="label label--text">Контактный телефон*:</label>
               <div class="form-group__fields">
@@ -94,7 +95,7 @@
           </div>
           <!-- /.form-group -->
           <div class="review-form__group form-group">
-            <h2 class="form-group__title">Ваше Общее впечатление:</h2>
+            <h2 class="form-group__title text-title">Ваше Общее впечатление:</h2>
             <div class="form-group__item">
               <input type="radio" class="hidden" name="impression" id="positive" value="positive" checked>
               <label for="positive" class="label label--selection">Скорее положительное</label>
@@ -110,7 +111,7 @@
           </div>
           <!-- /.form-group -->
           <div class="review-form__group form-group">
-            <h2 class="form-group__title">Посещенные достопримечательности:</h2>
+            <h2 class="form-group__title text-title">Посещенные достопримечательности:</h2>
             <div class="form-group__item">
               <input type="checkbox" class="hidden" name="bridge" id="bridge" checked>
               <label for="bridge" class="label label--selection">Мост Дьявола</label>
@@ -130,7 +131,7 @@
           </div>
           <!-- /.form-group -->
           <div class="review-form__group form-group">
-            <h2 class="form-group__title">Опишите свои эмоции:</h2>
+            <h2 class="form-group__title text-title">Опишите свои эмоции:</h2>
             <textarea class="field field--area" name="comment" id="comment" cols="" rows="" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
           <!-- /.form-group -->
@@ -143,7 +144,7 @@
     <!-- /.review -->
 
     <footer class="page-footer">
-      <b class="page-footer__hashtag">#visitSEDONA</b>
+      <p class="page-footer__hashtag text-title text-title--promo">#visitSEDONA</p>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -159,7 +160,7 @@
       </div>
       <!-- /.social -->
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
+        <b class="copyright__text text-copyright">Разработано</b>
         <div class="copyright__icon"></div>
       </div>
       <!-- /.copyright -->

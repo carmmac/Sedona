@@ -1,0 +1,168 @@
+.text-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.text-title--promo {
+  font-size: 21px;
+}
+
+.text-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.text-description--main {
+  line-height: 26px;
+}
+
+.text-description--sub {
+  line-height: 24px;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.page__body {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+}
+
+.page-header {
+  background-color: #ffffff;
+}
+
+.site-list__item {
+  background-color: #81B3D2;
+  -webkit-box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
+          box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
+}
+
+.site-list__item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.page-footer {
+  background-color: #ffffff;
+}
+
+.page-footer__hashtag {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.social__item {
+  background-color: #81B3D2;
+}
+
+.copyright__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 26px;
+}
+
+.page-intro {
+  background-image: url("../../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.intro__background {
+  background-image: url("../../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.intro__description {
+  background-color: #ffffff;
+}
+
+.advantage__header {
+  background-color: #eeeeee;
+}
+
+.advantage__header--explicit {
+  background-color: #81b3d2;
+}
+
+.advantage__title--explicit {
+  color: #ffffff;
+}
+
+.advantage__number--explicit {
+  color: #ffffff;
+}
+
+.advantage__description--explicit {
+  color: #ffffff;
+}
+
+.detail__item {
+  background-color: #ffffff;
+}
+
+.booking__title {
+  font-size: 21px;
+}
+
+.gallery {
+  background-color: #ffffff;
+}
+
+.gallery__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.card-info__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.card-info__author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.likes__counter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.button {
+  border: none;
+  background-color: #81B3D2;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -16,16 +17,16 @@
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="#">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Фото и видео</a>
+            <a class="site-list__link" href="#">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Форма Отзыва</a>
+            <a class="site-list__link" href="form.html">Форма Отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML ACADEMY</a>
+            <a class="site-list__link" href="#">HTML ACADEMY</a>
           </li>
         </ul>
         <!-- /.site-list -->
@@ -41,13 +42,13 @@
       Галерея
     </h1>
     <div class="gallery-intro page-intro">
-      <img src="https://via.placeholder.com/150x150" alt="SEDONA" class="page-intro__img">
+      <img src="img/text-sedona.svg" alt="SEDONA" class="page-intro__img">
     </div>
 
     <section class="gallery">
       <header class="gallery__header">
-        <h2 class="gallery__title">Фото и видео</h2>
-        <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <h2 class="gallery__title text-title">Фото и видео</h2>
+        <p class="gallery__text text-description text-description--sub">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </header>
 
       <div class="photo-gallery">
@@ -103,8 +104,8 @@
 
       <div class="video">
         <div class="video__header">
-          <h2 class="video__title">Все еще сомневаетесь?</h2>
-          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <h2 class="video__title text-title">Все еще сомневаетесь?</h2>
+          <p class="video__text text-description text-description--sub">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
         <div class="video__content"></div>
       </div>
@@ -113,7 +114,7 @@
     <!-- /.gallery -->
 
     <footer class="page-footer">
-      <b class="page-footer__hashtag">#visitSEDONA</b>
+      <p class="page-footer__hashtag text-title text-title--promo">#visitSEDONA</p>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -129,7 +130,7 @@
       </div>
       <!-- /.social -->
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
+        <b class="copyright__text text-copyright">Разработано</b>
         <div class="copyright__icon"></div>
       </div>
       <!-- /.copyright -->

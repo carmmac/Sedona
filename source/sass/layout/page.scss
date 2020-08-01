@@ -1,0 +1,12 @@
+.page {
+  height: 100%;
+  font-family: $main-font;
+  font-style: normal;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: $bg-main;
+  min-width: 320px;
+}
