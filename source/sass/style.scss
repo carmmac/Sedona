@@ -6,7 +6,9 @@
 
 // BASE
 @import "base/normalize.css";
-@import "base/text-content.scss";
+@import "base/text-title.scss";
+@import "base/text-description.scss";
+@import "base/text-copyright.scss";
 
 // LAYOUT
 // global
@@ -23,6 +25,8 @@
 @import "layout/index/intro.scss";
 @import "layout/index/advantage.scss";
 @import "layout/index/detail.scss";
+@import "layout/index/booking.scss";
+@import "layout/index/map.scss";
 
 // gallery page
 @import "layout/photo/gallery.scss";
@@ -30,6 +34,12 @@
 @import "layout/photo/photo-card.scss";
 @import "layout/photo/card-info.scss";
 @import "layout/photo/likes.scss";
+@import "layout/photo/video.scss";
+
+// form page
+@import "layout/form/review.scss";
+@import "layout/form/review-form.scss";
+@import "layout/form/field.scss";
 
 
 // COMPONENTS

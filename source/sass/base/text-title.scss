@@ -1,0 +1,7 @@
+.text-title {
+  @include text-title;
+
+  &--promo {
+    font-size: 21px;
+  }
+}

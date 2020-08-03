@@ -1,0 +1,17 @@
+.field {
+  background-color: $bg-field;
+
+  &--text {
+    @include text-title;
+    text-transform: none;
+    padding-top: 18px;
+    padding-left: 22px;
+    padding-bottom: 14px;
+  }
+
+  &--area {
+    margin-bottom: 51px;
+    padding: 13px 23px 29px 21px;
+    border: none;
+  }
+}
