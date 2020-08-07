@@ -1,3 +1,15 @@
 .page-header {
   background-color: $bg-main;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width-min) {
+    flex-direction: row;
+  }
+}
+
+.page-header__logo {
+  width: 102px;
+  height: 84px;
+  order: 2;
 }
