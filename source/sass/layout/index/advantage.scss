@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width-min) {
+    min-width: 256px;
+  }
 }
 
 .advantage__header {
@@ -22,6 +26,11 @@
   width: auto;
   margin-top: 55px;
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width-min) {
+    margin-top: 43px;
+    margin-bottom: 40px;
+  }
 }
 
 .advantage__title {
@@ -51,8 +60,15 @@
   &--explicit {
     color: #ffffff;
   }
+
+  @media (min-width: $tablet-width-min) {
+    max-width: 192px;
+  }
 }
 
-.advantage__details {
-  padding: 26px 11px 35px 18px;
+//! БЭМ!!!!!!!!!!!!!!
+.advantage-pic {
+  @media (min-width: $tablet-width-min) {
+    flex-grow: 1;
+  }
 }

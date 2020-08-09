@@ -1,5 +1,33 @@
+.main-nav {
+  width: auto;
+
+  @media (min-width: $tablet-width-min) {
+    flex-direction: row;
+    justify-content: center;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    width: 1200px;
+  }
+}
+
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width-min) {
+    flex-direction: row;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width-min) {
+    display: none;
+  }
 }

@@ -1,3 +1,15 @@
+.detail {
+  align-items: flex-start;
+  max-width: 288px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width-min) {
+    display: flex;
+    margin: 0;
+    width: 256px;
+  }
+}
+
 .detail__item {
   background-color: $bg-main;
 }

@@ -1,10 +1,23 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 28px;
   padding-bottom: 23px;
   background-color: $bg-main;
+
+  @media (min-width: $tablet-width-min) {
+    flex-direction: row;
+    padding: 36px 0;
+    justify-content: space-around;
+  }
 }
 
 .page-footer__hashtag {
   display: block;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width-min) {
+    margin: 0;
+  }
 }
