@@ -1,17 +1,23 @@
 .intro {
-  width: auto;
+  width: 100%;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width-min) {
+    width: 768px;
+  }
+  @media (min-width: $desktop-width-min) {
+    width: 1200px;
+  }
 }
 
 .intro__header {
   display: flex;
   flex-direction: column;
-  width: auto;
 }
 
 .intro__background {
   display: flex;
-  height: 389px;
+  //height: 389px;
   background-image: url("https://htmlacademy-adaptive.github.io/835565-sedona-20/5/img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -26,13 +32,17 @@
   margin: auto;
   margin-top: 90px;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width-min) {
+    margin-top: 77px;
+    margin-bottom: 34px;
+  }
 }
 
 .intro__description {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: auto;
   margin-top: 32px;
   margin-bottom: 11px;
 

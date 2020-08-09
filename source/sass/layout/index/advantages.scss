@@ -1,9 +1,14 @@
 .advantages {
-  width: auto;
+  width: 100%;
   margin: 0 auto;
+
   @media (min-width: $tablet-width-min) {
     display: flex;
     flex-direction: column;
+    width: 768px;
+  }
+  @media (min-width: $desktop-width-min) {
+    width: 1200px;
   }
 }
 
@@ -18,6 +23,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 768px;
-    margin: 0 auto;
+  }
+  @media (min-width: $desktop-width-min) {
+    width: 1200px;
   }
 }

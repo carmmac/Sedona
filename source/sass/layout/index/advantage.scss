@@ -6,6 +6,9 @@
   @media (min-width: $tablet-width-min) {
     min-width: 256px;
   }
+  @media (min-width: $desktop-width-min) {
+    min-width: 400px;
+  }
 }
 
 .advantage__header {
@@ -23,7 +26,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: auto;
   margin-top: 55px;
   margin-bottom: 39px;
 
@@ -67,7 +69,7 @@
 }
 
 //! БЭМ!!!!!!!!!!!!!!
-.advantage-pic {
+.advantage--pic {
   @media (min-width: $tablet-width-min) {
     flex-grow: 1;
   }
