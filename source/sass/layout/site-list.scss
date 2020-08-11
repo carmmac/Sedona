@@ -13,6 +13,7 @@
     background-color: $bg-main;
     box-shadow: none;
   }
+
   @media (min-width: $desktop-width-min) {
     width: 239px;
   }
@@ -25,6 +26,7 @@
       width: 156px;
       height: auto;
     }
+    
     @media (min-width: $desktop-width-min) {
       width: 244px;
     }

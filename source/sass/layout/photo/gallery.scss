@@ -9,6 +9,7 @@
   @media (min-width: $tablet-width-min) {
     width: 648px;
   }
+
   @media (min-width: $desktop-width-min) {
     width: 1200px;
   }
@@ -52,7 +53,6 @@
   @media (min-width: $tablet-width-min) {
     flex-direction: row;
     flex-wrap: wrap;
-
   }
 }
 
@@ -63,6 +63,7 @@
   @media (min-width: $tablet-width-min) {
     flex-basis: 324px;
   }
+
   @media (min-width: $desktop-width-min) {
     flex-basis: 400px;
   }

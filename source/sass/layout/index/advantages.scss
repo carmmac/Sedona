@@ -7,6 +7,7 @@
     flex-direction: column;
     width: 768px;
   }
+
   @media (min-width: $desktop-width-min) {
     width: 1200px;
   }
@@ -24,6 +25,7 @@
     flex-wrap: wrap;
     width: 768px;
   }
+  
   @media (min-width: $desktop-width-min) {
     width: 1200px;
   }
