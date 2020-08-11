@@ -7,11 +7,11 @@
 </head>
 <body class="page__body">
   <header class="page-header">
-    <a href="index.html" class="logo page-header__logo">
-      <img src="img/logo-sedona-mobile.svg" alt="Логотип">
+    <a class="page-header__logo">
+      <img src="https://htmlacademy-adaptive.github.io/835565-sedona-20/5/img/logo-sedona-mobile.svg" alt="Логотип">
     </a>
-    <div class="main-nav__wrapper">
-      <nav class="main-nav visually-hidden">
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -20,8 +20,9 @@
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Фото и видео</a>
+            <a class="site-list__link">Фото и видео</a>
           </li>
+          <li class="site-list__item site-list__item--logo"></li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Форма Отзыва</a>
           </li>
@@ -30,10 +31,10 @@
           </li>
         </ul>
         <!-- /.site-list -->
-      </nav>
-      <!-- /.main-nav -->
-    </div>
-    <!-- /.main-nav__wrapper -->
+      </div>
+
+    </nav>
+    <!-- /.main-nav -->
   </header>
   <!-- /.page-header -->
 
@@ -42,7 +43,8 @@
       Галерея
     </h1>
     <div class="gallery-intro page-intro">
-      <img src="img/text-sedona.svg" alt="SEDONA" class="page-intro__img">
+      <img src="https://htmlacademy-adaptive.github.io/835565-sedona-20/5/img/text-sedona.svg" alt="SEDONA" class="page-intro__img">
+      <div class="page-intro__decoration"></div>
     </div>
 
     <section class="gallery">
@@ -53,47 +55,47 @@
 
       <ul class="gallery__list">
         <li class="gallery__item photo-card">
-          <img src="https://via.placeholder.com/150x150" alt="Фото" class="photo-card__img">
+          <img src="https://htmlacademy-adaptive.github.io/835565-sedona-20/5/img/photo-sunset-mobile@1x.jpg" alt="Фото" class="photo-card__img">
           <div class="photo-card__info card-info">
             <h3 class="card-info__title">Неродные просторы</h3>
             <p class="card-info__author">Автор фото: Борис</p>
-          </div>
-          <div class="photo-card__likes likes">
-            <div class="likes__icon"></div>
-            <div class="likes__counter">1350</div>
+            <div class="card-info__likes likes">
+              <div class="likes__icon"></div>
+              <div class="likes__counter">1350</div>
+            </div>
           </div>
         </li>
         <li class="gallery__item photo-card">
-          <img src="https://via.placeholder.com/150x150" alt="Фото" class="photo-card__img">
+          <img src="https://htmlacademy-adaptive.github.io/835565-sedona-20/5/img/photo-cactus-mobile@1x.jpg" alt="Фото" class="photo-card__img">
           <div class="photo-card__info card-info">
             <h3 class="card-info__title">Местная растительность</h3>
             <p class="card-info__author">Автор фото: Сергей</p>
-          </div>
-          <div class="photo-card__likes likes">
-            <div class="likes__icon"></div>
-            <div class="likes__counter">143</div>
+            <div class="card-info__likes likes">
+              <div class="likes__icon"></div>
+              <div class="likes__counter">143</div>
+            </div>
           </div>
         </li>
         <li class="gallery__item photo-card">
-          <img src="https://via.placeholder.com/150x150" alt="Фото" class="photo-card__img">
+          <img src="https://htmlacademy-adaptive.github.io/835565-sedona-20/5/img/photo-roads-mobile@1x.jpg" alt="Фото" class="photo-card__img">
           <div class="photo-card__info card-info">
             <h3 class="card-info__title">Дорога на север</h3>
             <p class="card-info__author">Автор фото: Петр</p>
-          </div>
-          <div class="photo-card__likes likes">
-            <div class="likes__icon"></div>
-            <div class="likes__counter">96</div>
+            <div class="card-info__likes likes">
+              <div class="likes__icon"></div>
+              <div class="likes__counter">96</div>
+            </div>
           </div>
         </li>
         <li class="gallery__item photo-card">
-          <img src="https://via.placeholder.com/150x150" alt="Фото" class="photo-card__img">
+          <img src="https://htmlacademy-adaptive.github.io/835565-sedona-20/5/img/photo-bridge-mobile@1x.jpg" alt="Фото" class="photo-card__img">
           <div class="photo-card__info card-info">
             <h3 class="card-info__title">Мост дьявола</h3>
             <p class="card-info__author">Автор фото: Антон</p>
-          </div>
-          <div class="photo-card__likes likes">
-            <div class="likes__icon"></div>
-            <div class="likes__counter">254</div>
+            <div class="card-info__likes likes">
+              <div class="likes__icon"></div>
+              <div class="likes__counter">254</div>
+            </div>
           </div>
         </li>
       </ul>
@@ -115,7 +117,8 @@
     <!-- /.video -->
 
     <footer class="page-footer">
-      <span class="page-footer__hashtag text-title text-title--promo">#visitSEDONA</span>
+      <div class="page-footer__wrapper">
+        <span class="page-footer__hashtag text-title text-title--promo">#visitSEDONA</span>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -135,6 +138,8 @@
         <div class="copyright__icon"></div>
       </div>
       <!-- /.copyright -->
+      </div>
+      <!-- /.page-footer__wrapper -->
     </footer>
     <!-- /.page-footer -->
   </main>

@@ -1,4 +1,22 @@
 .page-intro {
-  background-image: url("../../../img/bg-back-mobile@1x.jpg");
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("https://htmlacademy-adaptive.github.io/835565-sedona-20/5/img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-color: $bg-main;
+
+  @media (min-width: $tablet-width-min) {
+    width: 768px;
+    background-image: url("https://htmlacademy-adaptive.github.io/835565-sedona-20/5/img/bg-back-desktop@1x.jpg");
+  }
+  @media (min-width: $desktop-width-min) {
+    width: 1200px;
+  }
+}
+
+.page-intro__img {
+  margin: auto;
 }

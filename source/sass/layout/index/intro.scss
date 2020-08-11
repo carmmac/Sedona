@@ -43,10 +43,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
   margin-top: 32px;
   margin-bottom: 11px;
+  width: 295px;       //! несоответствие макету, с макетной шириной текст располагается по-другому
 
   @media (min-width: $tablet-width-min) {
+    width: auto;
     margin-top: 44px;
     margin-bottom: 52px;
   }
@@ -60,6 +63,12 @@
 .intro__title {
   max-width: 520px;
   margin: 0;
+  padding: 0;
   margin-bottom: 27px;
   text-align: center;
+}
+
+.intro__text {
+  margin: 0;
+  padding: 0;
 }
