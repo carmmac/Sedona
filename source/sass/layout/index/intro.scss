@@ -48,6 +48,7 @@
   margin-top: 32px;
   margin-bottom: 11px;
   width: 295px;       //! несоответствие макету, с макетной шириной текст располагается по-другому
+  max-width: 520px;
 
   @media (min-width: $tablet-width-min) {
     width: auto;
@@ -62,7 +63,6 @@
 }
 
 .intro__title {
-  max-width: 520px;
   margin: 0;
   padding: 0;
   margin-bottom: 27px;
