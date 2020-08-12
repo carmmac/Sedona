@@ -3,13 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #eeeeee;
 
   &--explicit {
     background-color: $bg-main;
   }
 
   @media (min-width: $tablet-width-min) {
-    flex-basis: 33%;
+    flex-basis: 33.33%;
 
     &--explicit {
       flex-direction: row;
@@ -35,7 +36,7 @@
   }
 
   @media (min-width: $tablet-width-min) {
-    flex-basis: 33%;
+    flex-basis: 33.33%;
     display: flex;
   }
 }
