@@ -1,14 +1,7 @@
 .intro {
   width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-
-  @media (min-width: $tablet-width-min) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width-min) {
-    width: 1200px;
-  }
 }
 
 .intro__header {
@@ -30,11 +23,15 @@
 }
 
 .intro__background-img {
+  width: 282px;
+  height: 214px;
   margin: auto;
   margin-top: 90px;
   margin-bottom: 28px;
 
   @media (min-width: $tablet-width-min) {
+    width: 461px;
+    height: 350px;
     margin-top: 77px;
     margin-bottom: 34px;
   }
@@ -47,11 +44,9 @@
   margin: 0 auto;
   margin-top: 32px;
   margin-bottom: 11px;
-  width: 295px;       //! несоответствие макету, с макетной шириной текст располагается по-другому
-  max-width: 520px;
 
   @media (min-width: $tablet-width-min) {
-    width: auto;
+    max-width: 520px;
     margin-top: 44px;
     margin-bottom: 52px;
   }

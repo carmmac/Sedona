@@ -1,16 +1,7 @@
 .advantages {
   width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-
-  @media (min-width: $tablet-width-min) {
-    display: flex;
-    flex-direction: column;
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width-min) {
-    width: 1200px;
-  }
 }
 
 .advantages__list {
@@ -19,14 +10,11 @@
   list-style: none;
   display: flex;
   flex-direction: column;
+  background-color: #eeeeee;
 
   @media (min-width: $tablet-width-min) {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width-min) {
-    width: 1200px;
+    justify-content: space-between;
   }
 }

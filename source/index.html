@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1"
+    charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="https://htmlacademy-adaptive.github.io/835565-sedona-20/5/img/logo-sedona-mobile.svg" alt="Логотип">
+        <img src="img/logo-sedona-mobile.svg" alt="Логотип">
       </a>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
@@ -49,7 +51,7 @@
             Приветствие
           </h2>
           <div class="intro__background">
-            <img src="https://htmlacademy-adaptive.github.io/835565-sedona-20/5/img/text-sedona-index.svg" alt="Welcome to SEDONA" class="intro__background-img">
+            <img src="img/text-sedona-index.svg" alt="Welcome to SEDONA" class="intro__background-img">
           </div>
           <div class="intro__decoration"></div>
         </header>
@@ -68,7 +70,7 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages__list">
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantage advantage--explicit">
             <div class="advantage__header advantage__header--explicit">
               <div class="advantage__header-wrapper">
                 <h3 class="advantage__title advantage__title--explicit text-title">НАСТОЯЩИЙ ГОРОДОК</h3>
@@ -76,43 +78,37 @@
                 <p class="advantage__description advantage__description--explicit text-description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
               </div>
             </div>
-          </li>
-          <!-- /.advantages__item -->
-          <li class="advantages__item advantage advantage--pic">
-            <img class="advantage__img" src="https://htmlacademy-adaptive.github.io/835565-sedona-20/5/img/main-city-mobile@1x.jpg" alt="Фото города">
-          </li>
-          <!-- /.advantages__item -->
-          <li class="advantages__item advantage detail">
-            <div class="detail__item">
-              <div class="detail__header">
-                <div class="detail__icon"></div>
-                <p class="detail__title text-title">ЖИЛЬЕ</p>
+            <img class="advantage__img" src="img/main-city-mobile@1x.jpg" alt="Фото города">
+
+            <div class="advantage__details detail">
+              <div class="detail__item">
+                <div class="detail__header">
+                  <div class="detail__icon"></div>
+                  <p class="detail__title text-title">ЖИЛЬЕ</p>
+                </div>
+                <p class="detail__description text-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </div>
-              <p class="detail__description text-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <div class="detail__item">
+                <div class="detail__header">
+                  <div class="detail__icon"></div>
+                  <p class="detail__title text-title">СУВЕНИРЫ</p>
+                </div>
+                <p class="detail__description text-description">Не только китайского, но и местного производства!</p>
+              </div>
+              <div class="detail__item">
+                <div class="detail__header">
+                  <div class="detail__icon"></div>
+                  <p class="detail__title text-title">ЕДА</p>
+                </div>
+                <p class="detail__description text-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+              </div>
             </div>
           </li>
           <!-- /.advantages__item -->
-          <li class="advantages__item advantage detail">
-            <div class="detail__item">
-              <div class="detail__header">
-                <div class="detail__icon"></div>
-                <p class="detail__title text-title">СУВЕНИРЫ</p>
-              </div>
-              <p class="detail__description text-description">Не только китайского, но и местного производства!</p>
-            </div>
-          </li>
-          <!-- /.advantages__item -->
-          <li class="advantages__item advantage detail">
-            <div class="detail__item">
-              <div class="detail__header">
-                <div class="detail__icon"></div>
-                <p class="detail__title text-title">ЕДА</p>
-              </div>
-              <p class="detail__description text-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-            </div>
-          </li>
-          <!-- /.advantages__item -->
-          <li class="advantages__item advantage">
+
+
+
+          <li class="advantages__item advantage advantage--explicit advantage--reverse">
             <div class="advantage__header advantage__header--explicit">
               <div class="advantage__header-wrapper">
                 <h3 class="advantage__title advantage__title--explicit text-title">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
@@ -120,10 +116,7 @@
                 <p class="advantage__description advantage__description--explicit text-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
             </div>
-          </li>
-          <!-- /.advantages__item -->
-          <li class="advantages__item advantage advantage--pic">
-            <img class="advantage__img" src="https://htmlacademy-adaptive.github.io/835565-sedona-20/5/img/main-bridge-mobile@1x.jpg" alt="Фото города">
+            <img class="advantage__img" src="img/main-bridge-mobile@1x.jpg" alt="Фото города">
           </li>
           <!-- /.advantages__item -->
           <li class="advantages__item advantage">
@@ -151,7 +144,7 @@
               <div class="advantage__header-wrapper">
                 <h3 class="advantage__title text-title">МАЛО ТУРИСТОВ</h3>
                 <p class="advantage__number text-description">— №5 —</p>
-                <p class="advantage__description text-description">Большинство едет в гранд каньони толпится там</p>
+                <p class="advantage__description text-description">Большинство едет в гранд каньон и толпится там</p>
               </div>
             </div>
           </li>
