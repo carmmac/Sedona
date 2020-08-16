@@ -1,13 +1,24 @@
 .page-header {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__wrapper {
   position: relative;
   background-color: $bg-main;
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 
   @media (min-width: $tablet-width-min) {
     flex-direction: row;
     justify-content: center;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    max-width: 1200px;
   }
 }
 
@@ -23,7 +34,5 @@
 
   @media (min-width: $tablet-width-min) {
     position: absolute;
-    margin-right: 0;
-    margin-left: 0;
   }
 }

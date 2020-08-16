@@ -1,5 +1,8 @@
 .photo-card__img {
+  max-width: 100%;
+  height: auto;
   margin-bottom: 10px;
+
   @media (min-width: $tablet-width-min) {
     margin: 0;
   }

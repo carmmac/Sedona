@@ -1,9 +1,3 @@
-.advantages {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .advantages__list {
   margin: 0;
   padding: 0;
@@ -14,6 +8,5 @@
   @media (min-width: $tablet-width-min) {
     flex-direction: row;
     flex-wrap: wrap;
-    // justify-content: space-between;
   }
 }

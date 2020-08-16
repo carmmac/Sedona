@@ -1,0 +1,14 @@
+.page-main {
+  margin: 0;
+  padding: 0;
+}
+
+.page-main__wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $desktop-width-min) {
+    max-width: 1200px;
+  }
+}

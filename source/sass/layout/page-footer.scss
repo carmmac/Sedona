@@ -1,20 +1,27 @@
 .page-footer {
-  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 28px;
   padding-bottom: 23px;
   background-color: $bg-main;
 
   @media (min-width: $tablet-width-min) {
     flex-direction: row;
-    margin: 0 auto;
     padding: 36px 0;
     justify-content: space-around;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    max-width: 1200px;
   }
 }
 
@@ -23,6 +30,6 @@
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width-min) {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
