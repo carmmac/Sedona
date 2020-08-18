@@ -1,5 +1,12 @@
 .social__list {
+  padding: 0;
+  margin: 0;
   margin-bottom: 40px;
+  list-style: none;
+
+  @media (min-width: $tablet-width-min) {
+    margin: 0;
+  }
 }
 
 .social__item {

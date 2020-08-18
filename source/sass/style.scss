@@ -6,6 +6,8 @@
 
 // BASE
 @import "base/normalize";
+@import "base/fonts.scss";
+@import "base/visually-hidden.scss";
 @import "base/text-title.scss";
 @import "base/text-description.scss";
 @import "base/text-copyright.scss";
@@ -14,7 +16,9 @@
 // global
 @import "layout/page.scss";
 @import "layout/page-header.scss";
+@import "layout/main-nav.scss";
 @import "layout/site-list.scss";
+@import "layout/page-main.scss";
 @import "layout/page-intro.scss";
 @import "layout/page-footer.scss";
 @import "layout/social.scss";
@@ -23,6 +27,7 @@
 
 // main page
 @import "layout/index/intro.scss";
+@import "layout/index/advantages.scss";
 @import "layout/index/advantage.scss";
 @import "layout/index/detail.scss";
 @import "layout/index/booking.scss";

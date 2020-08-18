@@ -1,3 +1,39 @@
+.detail {
+  align-items: flex-start;
+  width: 90%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width-min) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+
 .detail__item {
   background-color: $bg-main;
+
+  @media (min-width: $tablet-width-min) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 0;
+  }
+}
+
+.detail__title {
+  margin: 0;
+  padding: 0;
+}
+
+.detail__description {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width-min) {
+    text-align: center;
+  }
 }
