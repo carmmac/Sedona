@@ -1,21 +1,12 @@
 .site-list__item {
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 5px;
   background-color: $bg-second;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
   text-align: center;
 
   @media (min-width: $tablet-width-min) {
-    width: 153px;
-    padding-top: 16px;
-    padding-bottom: 14px;
     background-color: $bg-main;
     box-shadow: none;
-  }
-
-  @media (min-width: $desktop-width-min) {
-    width: 239px;
   }
 
   &--logo {
@@ -23,16 +14,15 @@
 
     @media (min-width: $tablet-width-min) {
       display: block;
-      width: 156px;
-    }
-
-    @media (min-width: $desktop-width-min) {
-      width: 244px;
     }
   }
 }
 
 .site-list__link {
+  display: inline-block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 5px;
   text-decoration: none;
   color: #ffffff;
   font-weight: $weight-bold;
@@ -41,6 +31,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width-min) {
+    padding-top: 16px;
+    padding-bottom: 14px;
     color: #000000;
     font-size: 14px;
     line-height: 26px;
