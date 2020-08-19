@@ -5,17 +5,24 @@
   padding: 0 20px 48px;
 
   @media (min-width: $tablet-width-min) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 250px 235px 240px 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-left: 60px;
     padding-right: 60px;
   }
 
-  @media (min-width: $desktop-width-min) {
-    padding-left: 120px;
-    padding-right: 120px;
-  }
+  // @media (min-width: $tablet-width-min) {
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr;
+  //   grid-template-rows: 300px 250px 235px 240px 60px;
+  //   padding-left: 60px;
+  //   padding-right: 60px;
+  // }
+
+  // @media (min-width: $desktop-width-min) {
+  //   padding-left: 120px;
+  //   padding-right: 120px;
+  // }
 }
 
 .review-form__group {
