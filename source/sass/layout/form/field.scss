@@ -1,9 +1,17 @@
 .field {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  flex-grow: 1;
   background-color: $bg-field;
+  overflow: hidden;
 
   &--text {
+    height: 58px;
     @include text-title;
     text-transform: none;
+    margin-left: 15px;
     padding-top: 18px;
     padding-left: 22px;
     padding-bottom: 14px;
@@ -12,5 +20,7 @@
   &--area {
     padding: 13px 23px 29px 21px;
     border: none;
+    @include text-title;
+    text-transform: none;
   }
 }
