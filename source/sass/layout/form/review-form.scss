@@ -39,6 +39,7 @@
   @media (min-width: $tablet-width-min) {
     display: block;
     margin-left: auto;
+    
     @include text-description;
     line-height: 26px;
   }
