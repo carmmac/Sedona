@@ -19,10 +19,10 @@
   //   padding-right: 60px;
   // }
 
-  // @media (min-width: $desktop-width-min) {
-  //   padding-left: 120px;
-  //   padding-right: 120px;
-  // }
+  @media (min-width: $desktop-width-min) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .review-form__group {
@@ -39,5 +39,7 @@
   @media (min-width: $tablet-width-min) {
     display: block;
     margin-left: auto;
+    @include text-description;
+    line-height: 26px;
   }
 }

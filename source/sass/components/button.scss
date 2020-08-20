@@ -1,3 +1,21 @@
 .button {
   @include button-style;
+
+  &--booking {
+    padding-top: 15px;
+    padding-bottom: 17px;
+    background-color: $bg-second;
+    color: #ffffff;
+  }
+
+  &--submit {
+    padding-top: 18px;
+    padding-bottom: 14px;
+    background-color: $bg-second;
+    color: #ffffff;
+
+    @media (min-width: $tablet-width-min) {
+      flex-basis: 50%;
+    }
+  }
 }

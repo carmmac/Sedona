@@ -1,5 +1,6 @@
 .form-group {
   background-color: $bg-main;
+  min-width: 0;
 
   @media (min-width: $tablet-width-min) {
     flex-basis: 100%;
@@ -89,6 +90,10 @@
   &--impression {
     align-self: flex-start;
   }
+
+  @media (min-width: $tablet-width-min) {
+    font-size: 21px;
+  }
 }
 
 .form-group__item {
@@ -103,18 +108,15 @@
 }
 
 .form-group__checklist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width-min) {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    // flex-basis: 75%;
+    flex-basis: 75%;
   }
-}
-
-//! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-.checklist__item {
-  flex-basis: 50%;
 }
 
 .form-group__fields {

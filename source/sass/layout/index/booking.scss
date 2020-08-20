@@ -30,6 +30,10 @@
   margin-top: 0;
   margin-bottom: 19px;
   text-align: center;
+
+  @media (min-width: $tablet-width-min) {
+    font-size: 30px;
+  }
 }
 
 .booking__text {

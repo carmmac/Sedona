@@ -3,13 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   border: none;
-  flex-basis: 0;
   flex-grow: 1;
   background-color: $bg-field;
   overflow: hidden;
 
   &--text {
-    height: 58px;
+    // height: 58px;
     @include text-title;
     text-transform: none;
     padding-top: 18px;
@@ -18,6 +17,7 @@
   }
 
   &--area {
+    height: 160px;
     padding: 13px 23px 29px 21px;
     border: none;
     @include text-title;
