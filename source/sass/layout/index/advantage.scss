@@ -11,6 +11,7 @@
 
   @media (min-width: $tablet-width-min) {
     flex-basis: 33.33%;
+    min-height: 256px;
 
     &--explicit {
       flex-direction: row;
@@ -49,6 +50,7 @@
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width-min) {
+    flex-basis: 75%;
     margin: auto;
   }
 }
@@ -59,10 +61,6 @@
 
   &--explicit {
     color: #ffffff;
-  }
-
-  @media (min-width: $tablet-width-min) {
-    font-size: 21px;
   }
 }
 
@@ -78,14 +76,9 @@
 .advantage__description {
   margin-top: 0;
   margin-bottom: 0;
-  text-align: center;
 
   &--explicit {
     color: #ffffff;
-  }
-
-  @media (min-width: $tablet-width-min) {
-    //max-width: 192px;
   }
 }
 

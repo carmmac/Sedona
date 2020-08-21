@@ -1,5 +1,6 @@
 .text-title {
   @include text-title;
+  text-align: center;
 
   &--promo {
     font-size: 21px;

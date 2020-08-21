@@ -1,12 +1,46 @@
+.site-list {
+  background-color: $bg-second;
+  
+  @media (min-width: $tablet-width-min) {
+    background-color: $bg-main;
+  }
+}
+
 .site-list__item {
   width: 100%;
   background-color: $bg-second;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
   text-align: center;
+  margin-bottom: 1px;
+
+  &:first-child {
+    box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
+  }
+
+  &:last-child {
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  }
+
+  &:hover {
+    background-color: #669EC0;
+
+    @media (min-width: $tablet-width-min) {
+      background-color: $bg-main;
+    }
+  }
+
+  &:active {
+    background-color: #5496BD;
+
+    @media (min-width: $tablet-width-min) {
+      background-color: $bg-main;
+    }
+  }
 
   @media (min-width: $tablet-width-min) {
     background-color: $bg-main;
     box-shadow: none;
+    margin-bottom: 0;
   }
 
   &--logo {
@@ -14,6 +48,18 @@
 
     @media (min-width: $tablet-width-min) {
       display: block;
+    }
+  }
+
+  &--active a {
+    color: #766357;
+
+    &:hover {
+      color: #604E43;
+    }
+
+    &:active {
+      color: rgba(118, 99, 87, 0.3);
     }
   }
 }
@@ -29,6 +75,21 @@
   font-size: 18px;
   line-height: 40px;
   text-transform: uppercase;
+
+  &[href] {
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    @media (min-width: $tablet-width-min) {
+      &:hover {
+        color: $bg-second;
+      }
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
 
   @media (min-width: $tablet-width-min) {
     padding-top: 16px;
