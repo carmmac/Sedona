@@ -6,6 +6,10 @@
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width-min) {
+    font-size: 21px;
+  }
 }
 
 @mixin text-description {

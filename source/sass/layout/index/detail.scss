@@ -27,15 +27,12 @@
 .detail__title {
   margin: 0;
   padding: 0;
-
-  @media (min-width: $tablet-width-min) {
-    font-size: 21px;
-  }
 }
 
 .detail__description {
   margin: 0;
   padding: 0;
+  text-align: left;
 
   @media (min-width: $tablet-width-min) {
     text-align: center;

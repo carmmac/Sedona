@@ -15,10 +15,9 @@
 .gallery__title {
   margin-top: 0;
   margin-bottom: 27px;
-  text-align: center;
 
   @media (min-width: $tablet-width-min) {
-    font-size: 30px;
+    font-size: $size-wide-screen;
   }
 }
 
