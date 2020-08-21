@@ -1,5 +1,11 @@
 .field {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  flex-grow: 1;
   background-color: $bg-field;
+  overflow: hidden;
 
   &--text {
     @include text-title;
@@ -10,7 +16,11 @@
   }
 
   &--area {
+    height: 160px;
     padding: 13px 23px 29px 21px;
     border: none;
+
+    @include text-title;
+    text-transform: none;
   }
 }

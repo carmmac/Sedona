@@ -43,8 +43,11 @@
 // form page
 @import "layout/form/review.scss";
 @import "layout/form/review-form.scss";
+@import "layout/form/form-group";
 @import "layout/form/field.scss";
+@import "layout/form/checklist.scss";
 
 
 // COMPONENTS
 @import "components/button.scss";
+@import "components/label";

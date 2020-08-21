@@ -1,0 +1,125 @@
+.form-group {
+  background-color: $bg-main;
+  min-width: 0;
+
+  @media (min-width: $tablet-width-min) {
+    flex-basis: 100%;
+  }
+
+  &--impression {
+    padding-bottom: 31px;
+
+    @media (min-width: $tablet-width-min) {
+      order: 1;
+      flex-basis: 50%;
+      // grid-column: 1/2;
+      // grid-row: 1/2;
+      padding: 0;
+    }
+  }
+
+  &--name {
+    @media (min-width: $tablet-width-min) {
+      order: 2;
+      flex-basis: 50%;
+      // grid-column: 2/3;
+      // grid-row: 1/2;
+      padding: 0;
+      // padding-left: 60px;
+    }
+  }
+
+  &--contact {
+    @media (min-width: $tablet-width-min) {
+      order: 3;
+      // grid-column: 1/3;
+      // grid-row: 2/3;
+    }
+  }
+
+  &--sights {
+    padding-top: 15px;
+    padding-bottom: 30px;
+
+    @media (min-width: $tablet-width-min) {
+      order: 4;
+      // grid-column: 1/3;
+      // grid-row: 3 / 4;
+      align-items: center;
+    }
+  }
+
+  &--feedback {
+    padding-bottom: 51px;
+
+    @media (min-width: $tablet-width-min) {
+      order: 5;
+      // grid-column: 1/3;
+      // grid-row: 4/5;
+    }
+  }
+
+  &--submit {
+    padding: 0;
+
+    @media (min-width: $tablet-width-min) {
+      order: 6;
+      // grid-column: 1/3;
+      // grid-row: 5/6;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
+
+.form-group__list {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.form-group__title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  &--name {
+    align-self: flex-start;
+  }
+
+  &--impression {
+    align-self: flex-start;
+  }
+
+  @media (min-width: $tablet-width-min) {
+    font-size: 21px;
+  }
+}
+
+.form-group__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+
+  &--contact {
+    flex-direction: column;
+  }
+}
+
+.form-group__checklist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width-min) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 75%;
+  }
+}
+
+.form-group__fields {
+  display: flex;
+  width: 100%;
+}

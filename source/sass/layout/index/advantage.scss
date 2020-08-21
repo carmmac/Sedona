@@ -60,6 +60,10 @@
   &--explicit {
     color: #ffffff;
   }
+
+  @media (min-width: $tablet-width-min) {
+    font-size: 21px;
+  }
 }
 
 .advantage__number {
