@@ -1,40 +1,86 @@
 .detail {
   align-items: flex-start;
   width: 90%;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width-min) {
     width: 100%;
     justify-content: center;
-    align-items: center;
-    margin: auto;
+    align-items: baseline;
   }
 }
 
 .detail__item {
   background-color: $bg-main;
 
+  &--house {
+    margin-bottom: 15px;
+  }
+
+  &--gift {
+    margin-bottom: 21px;
+
+    @media (min-width: $tablet-width-min) {
+      order: 2;
+    }
+  }
+
+  &--food {
+    @media (min-width: $tablet-width-min) {
+      order: 1;
+    }
+  }
+
   @media (min-width: $tablet-width-min) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
+    flex-basis: 33.33%;
     margin: 0;
+  }
+}
+
+.detail__header {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width-min) {
+    flex-direction: column;
+  }
+}
+
+.detail__icon {
+  width: 40px;
+  height: 38px;
+  display: flex;
+  margin-right: 10px;
+
+  @media (min-width: $tablet-width-min) {
+    width: 76px;
+    height: 75px;
+    margin-right: 0;
+    margin-bottom: 26px;
   }
 }
 
 .detail__title {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width-min) {
+    margin-bottom: 34px;
+  }
 }
 
 .detail__description {
   margin: 0;
+  margin-left: 50px;
   padding: 0;
   text-align: left;
 
   @media (min-width: $tablet-width-min) {
+    max-width: 90%;
+    margin-left: 0;
     text-align: center;
   }
 }

@@ -95,8 +95,15 @@
 .advantage__details {
   display: flex;
   flex-direction: column;
+  margin: 26px auto 35px;
 
   @media (min-width: $tablet-width-min) {
     flex-direction: row;
+    margin-top: 57px;
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin-bottom: 80px;
   }
 }

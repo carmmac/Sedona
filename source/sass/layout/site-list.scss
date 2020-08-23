@@ -1,6 +1,6 @@
 .site-list {
   background-color: $bg-second;
-  
+
   @media (min-width: $tablet-width-min) {
     background-color: $bg-main;
   }
@@ -15,10 +15,18 @@
 
   &:first-child {
     box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
+
+    @media (min-width: $tablet-width-min) {
+      box-shadow: none;
+    }
   }
 
   &:last-child {
     box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+
+    @media (min-width: $tablet-width-min) {
+      box-shadow: none;
+    }
   }
 
   &:hover {
@@ -52,14 +60,17 @@
   }
 
   &--active a {
-    color: #766357;
+    @media (min-width: $tablet-width-min) {
+      color: #766357;
+      cursor: default;
 
-    &:hover {
-      color: #604E43;
-    }
+      &:hover {
+        color: #604E43;
+      }
 
-    &:active {
-      color: rgba(118, 99, 87, 0.3);
+      &:active {
+        color: rgba(118, 99, 87, 0.3);
+      }
     }
   }
 }

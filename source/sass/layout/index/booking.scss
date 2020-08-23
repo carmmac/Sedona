@@ -19,19 +19,27 @@
 
 .booking__header {
   margin-bottom: 27px;
-  padding: 0 10px;
 
   @media (min-width: $tablet-width-min) {
-    padding: 0;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin-bottom: 42px;
   }
 }
 
 .booking__title {
   margin-top: 0;
-  margin-bottom: 19px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width-min) {
+    margin-bottom: 25px;
     font-size: $size-wide-screen;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin-bottom: 26px;
   }
 }
 
