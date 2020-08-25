@@ -1,11 +1,36 @@
+.likes {
+  display: flex;
+}
+
 .likes__counter {
   font-weight: $weight-bold;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $desktop-width-min) {
+    color: #ffffff;
+  }
 }
 
 .likes__icon {
+  width: 23px;
+  height: 21px;
   margin-right: 14px;
+
+  @media (min-width: $desktop-width-min) {
+    
+  }
 }
+
+// .likes__icon {
+//   width: 23px;
+//   height: 21px;
+//   margin-right: 14px;
+//   background-image: url("../img/icon-like.svg");
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   opacity: 0.3;
+//   }
+// }

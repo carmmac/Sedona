@@ -10,6 +10,14 @@
   }
 }
 
+.card-info__description {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width-min) {
+    margin-bottom: 0;
+  }
+}
+
 .card-info__title {
   margin: 0;
   padding: 0;

@@ -53,6 +53,10 @@
     flex-basis: 75%;
     margin: auto;
   }
+
+  @media (min-width: $desktop-width-min) {
+    flex-basis: 71%;
+  }
 }
 
 .advantage__title {
@@ -61,6 +65,12 @@
 
   &--explicit {
     color: #ffffff;
+  }
+
+  @media (max-width: 767px) {
+    br {
+      display: none;
+    }
   }
 }
 
@@ -80,6 +90,12 @@
 
   &--explicit {
     color: #ffffff;
+  }
+
+  @media (max-width: $desktop-width-min) {
+    br {
+      display: none;
+    }
   }
 }
 
