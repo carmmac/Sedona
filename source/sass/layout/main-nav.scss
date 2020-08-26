@@ -59,10 +59,10 @@
   &:active {
     opacity: 30%;
   }
-
-  &:focus {
-    outline: none;
-  }
+  //  //* проблема для навигации с клавиатуры
+  // &:focus {
+  //   outline: none;
+  // }
 
   @media (min-width: $tablet-width-min) {
     display: none;

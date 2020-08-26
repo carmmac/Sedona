@@ -30,7 +30,7 @@
   }
 
   &:hover {
-    background-color: #669EC0;
+    background-color: $bg-hover;
 
     @media (min-width: $tablet-width-min) {
       background-color: $bg-main;
@@ -38,7 +38,7 @@
   }
 
   &:active {
-    background-color: #5496BD;
+    background-color: $bg-active;
 
     @media (min-width: $tablet-width-min) {
       background-color: $bg-main;

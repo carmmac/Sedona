@@ -46,8 +46,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 34px;
-  padding-bottom: 39px;
+  margin-top: 34px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width-min) {
     flex-basis: 75%;
