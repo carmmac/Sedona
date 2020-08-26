@@ -32,3 +32,12 @@
     height: 80px;
   }
 }
+
+.page-intro__decoration {
+  min-height: 57px;
+  margin-top: -57px;
+  background-image: url("../img/bg-intro-triangle-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
