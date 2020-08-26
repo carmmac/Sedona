@@ -18,6 +18,12 @@
   &:last-child {
     margin-right: 0;
   }
+}
+
+.social__link {
+  display: flex;
+  width: 46px;
+  height: 48px;
 
   &:hover {
     background-color: $bg-hover;
@@ -30,12 +36,6 @@
       opacity: 0.3;
     }
   }
-}
-
-.social__link {
-  display: flex;
-  width: 46px;
-  height: 48px;
 }
 
 .social__link-icon {
