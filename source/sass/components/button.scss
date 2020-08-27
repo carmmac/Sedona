@@ -15,10 +15,6 @@
       background-color: $bg-active;
       color: rgba(225, 225, 225, 0.3);
     }
-  //  //* проблема для навигации с клавиатуры
-  // &:focus {
-  //   outline: none;
-  // }
 
     &:disabled {
       background-color: #e5e5e5;
