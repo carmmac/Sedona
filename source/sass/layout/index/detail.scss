@@ -80,8 +80,13 @@
   text-align: left;
 
   @media (min-width: $tablet-width-min) {
-
     margin: 0 auto;
     text-align: center;
+  }
+
+  @media (max-width: $desktop-width-min) {
+    br {
+      display: none;
+    }
   }
 }
