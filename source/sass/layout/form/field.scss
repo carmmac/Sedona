@@ -5,9 +5,13 @@
   flex-grow: 1;
   background-color: $bg-field;
   overflow: hidden;
+  @include text-title;
+
+  @media (min-width: $tablet-width-min) {
+    font-size: 18px;
+  }
 
   &--text {
-    @include text-title;
     text-transform: none;
     padding-top: 18px;
     padding-left: 22px;
@@ -18,8 +22,10 @@
     height: 160px;
     padding: 13px 23px 29px 21px;
     border: none;
-
-    @include text-title;
     text-transform: none;
+
+    @media (min-width: $tablet-width-min) {
+      padding: 18px 21px 24px;
+    }
   }
 }

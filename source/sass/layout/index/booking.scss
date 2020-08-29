@@ -46,4 +46,10 @@
 .booking__text {
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (max-width: $tablet-width-min) {
+    br {
+      display: none;
+    }
+  }
 }

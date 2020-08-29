@@ -44,7 +44,8 @@
 
   @media (min-width: $tablet-width-min) {
     flex-direction: column;
-    flex-basis: 60%;
+    max-width: 75%;
+    margin-top: 0;
   }
 }
 
@@ -68,7 +69,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width-min) {
-    margin-bottom: 34px;
+    margin-bottom: 22px;
     text-align: center;
   }
 }
@@ -79,8 +80,13 @@
   text-align: left;
 
   @media (min-width: $tablet-width-min) {
-    max-width: 75%;
     margin: 0 auto;
     text-align: center;
+  }
+
+  @media (max-width: $desktop-width-min) {
+    br {
+      display: none;
+    }
   }
 }

@@ -25,6 +25,12 @@
 .gallery__text {
   margin: 0;
   padding: 0;
+
+  @media (max-width: $tablet-width-min) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .gallery__list {

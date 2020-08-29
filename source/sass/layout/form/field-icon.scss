@@ -1,0 +1,16 @@
+.field-icon {
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  &--phone {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &--email {
+    background-image: url("../img/icon-mail.svg");
+  }
+}

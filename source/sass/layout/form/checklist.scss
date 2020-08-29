@@ -2,4 +2,8 @@
   @media (min-width: $tablet-width-min) {
     flex-basis: 50%;
   }
+
+  @media (min-width: $desktop-width-min) {
+    flex-basis: 25%;
+  }
 }
