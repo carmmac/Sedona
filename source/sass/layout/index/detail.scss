@@ -58,6 +58,7 @@
   @media (min-width: $tablet-width-min) {
     width: 76px;
     height: 75px;
+    flex-shrink: 0;
     margin-right: 0;
     margin-bottom: 26px;
   }
