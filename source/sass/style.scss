@@ -8,6 +8,7 @@
 @import "base/normalize";
 @import "base/fonts.scss";
 @import "base/visually-hidden.scss";
+@import "base/hidden.scss";
 @import "base/text-title.scss";
 @import "base/text-description.scss";
 @import "base/text-copyright.scss";
@@ -47,9 +48,11 @@
 @import "layout/form/review-form.scss";
 @import "layout/form/form-group";
 @import "layout/form/field.scss";
+@import "layout/form/field-icon.scss";
 @import "layout/form/checklist.scss";
 
 
 // COMPONENTS
 @import "components/button.scss";
 @import "components/label";
+@import "components/select.scss";
