@@ -1,0 +1,35 @@
+.button-burger {
+  position: absolute;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
+  @media (min-width: $tablet-width-min) {
+    display: none;
+  }
+}
+
+.button-burger::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 4px;
+  background-color: $bg-second;
+  box-shadow: 0 9px 0 0 $bg-second, 0 18px 0 0 $bg-second;
+}

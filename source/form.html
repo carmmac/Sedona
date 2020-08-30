@@ -10,13 +10,18 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/logo-sedona-mobile.svg" alt="Логотип">
-      </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
+      <div class="page-header__container">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logo-sedona-mobile.svg" alt="Логотип">
+        </a>
+        <button class="page-header__button button-burger" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+        <button class="page-header__button button-cross" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -145,7 +150,7 @@
           <!-- /.form-group -->
           <div class="review-form__group form-group form-group--feedback">
             <h2 class="form-group__title text-title">Опишите свои эмоции:</h2>
-            <textarea class="field field--area" name="comment" id="comment" cols="" rows=""
+            <textarea class="field field--area" name="comment" id="comment"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
           <!-- /.form-group -->

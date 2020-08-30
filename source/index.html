@@ -10,15 +10,26 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo">
-        <img src="img/logo-sedona-mobile.svg" alt="Логотип">
-      </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
+      <div class="page-header__container">
+        <a class="page-header__logo">
+          <img src="img/logo-sedona-mobile.svg" alt="Логотип">
+        </a>
+        <button class="page-header__button button-burger" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+        <button class="page-header__button button-cross" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Главная</a>
+            </li>
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link">Главная</a>
             </li>
