@@ -10,17 +10,23 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo">
-        <img src="img/logo-sedona-mobile.svg" alt="Логотип">
-      </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
+      <div class="page-header__container">
+        <a class="page-header__logo">
+          <img src="img/logo-sedona-mobile.svg" alt="Логотип">
+        </a>
+        <button class="page-header__button button-burger" type="button">
           <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="page-header__button button-cross" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link">Главная</a>
+            </li>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="photo.html">Фото и видео</a>
@@ -66,7 +72,7 @@
           </p>
         </div>
         <div class="intro__description-decor">
-          <svg width="auto" height="37" viewBox="0 0 320 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="100%" height="37" viewBox="0 0 320 37" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M-225 0H159V37L-225 0Z" fill="white" />
             <path fill-rule="evenodd" clip-rule="evenodd" d="M543 0H159V37L543 0Z" fill="white" />
           </svg>
