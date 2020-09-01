@@ -1,43 +1,93 @@
 .detail {
-  align-items: flex-start;
   width: 90%;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width-min) {
     width: 100%;
     justify-content: center;
-    align-items: center;
-    margin: auto;
   }
 }
 
 .detail__item {
+  display: flex;
   background-color: $bg-main;
 
+  &--house {
+    margin-bottom: 15px;
+  }
+
+  &--gift {
+    margin-bottom: 21px;
+
+    @media (min-width: $tablet-width-min) {
+      order: 2;
+    }
+  }
+
+  &--food {
+    @media (min-width: $tablet-width-min) {
+      order: 1;
+    }
+  }
+
   @media (min-width: $tablet-width-min) {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
+    flex-basis: 33.33%;
     margin: 0;
+  }
+}
+
+.detail__header {
+  flex-basis: 75%;
+  margin-top: 9px;
+
+  @media (min-width: $tablet-width-min) {
+    flex-direction: column;
+    max-width: 75%;
+    margin-top: 0;
+  }
+}
+
+.detail__icon {
+  width: 40px;
+  height: 38px;
+  display: flex;
+  margin-right: 10px;
+
+  @media (min-width: $tablet-width-min) {
+    width: 76px;
+    height: 75px;
+    flex-shrink: 0;
+    margin-right: 0;
+    margin-bottom: 26px;
   }
 }
 
 .detail__title {
   margin: 0;
+  margin-bottom: 16px;
   padding: 0;
 
   @media (min-width: $tablet-width-min) {
-    font-size: 21px;
+    margin-bottom: 22px;
+    text-align: center;
   }
 }
 
 .detail__description {
   margin: 0;
   padding: 0;
+  text-align: left;
 
   @media (min-width: $tablet-width-min) {
+    margin: 0 auto;
     text-align: center;
+  }
+
+  @media (max-width: $desktop-width-min) {
+    br {
+      display: none;
+    }
   }
 }

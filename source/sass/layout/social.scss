@@ -3,12 +3,42 @@
   margin: 0;
   margin-bottom: 40px;
   list-style: none;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width-min) {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 
 .social__item {
+  margin-right: 6px;
   background-color: $bg-second;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: flex;
+  width: 46px;
+  height: 48px;
+
+  &:hover {
+    background-color: $bg-hover;
+  }
+
+  &:active {
+    background-color: $bg-active;
+
+    .social__link-icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.social__link-icon {
+  margin: auto;
+  filter: brightness(0) invert(1);
 }

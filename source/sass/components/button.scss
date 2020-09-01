@@ -6,6 +6,19 @@
     padding-bottom: 17px;
     background-color: $bg-second;
     color: #ffffff;
+
+    &:hover {
+      background-color: $bg-hover;
+    }
+
+    &:active {
+      background-color: $bg-active;
+      color: rgba(225, 225, 225, 0.3);
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+    }
   }
 
   &--submit {

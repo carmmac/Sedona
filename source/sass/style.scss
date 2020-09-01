@@ -16,6 +16,8 @@
 // global
 @import "layout/page.scss";
 @import "layout/page-header.scss";
+@import "layout/button-burger.scss";
+@import "layout/button-cross.scss";
 @import "layout/main-nav.scss";
 @import "layout/site-list.scss";
 @import "layout/page-main.scss";
@@ -30,6 +32,7 @@
 @import "layout/index/advantages.scss";
 @import "layout/index/advantage.scss";
 @import "layout/index/detail.scss";
+@import "layout/index/detail-icon.scss";
 @import "layout/index/booking.scss";
 @import "layout/index/map.scss";
 
@@ -38,6 +41,7 @@
 @import "layout/photo/photo-card.scss";
 @import "layout/photo/card-info.scss";
 @import "layout/photo/likes.scss";
+@import "layout/photo/likes-icon.scss";
 @import "layout/photo/video.scss";
 
 // form page

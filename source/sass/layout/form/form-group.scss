@@ -81,7 +81,6 @@
 .form-group__title {
   margin: 0;
   padding: 0;
-  text-align: center;
 
   &--name {
     align-self: flex-start;
@@ -90,17 +89,12 @@
   &--impression {
     align-self: flex-start;
   }
-
-  @media (min-width: $tablet-width-min) {
-    font-size: 21px;
-  }
 }
 
 .form-group__item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  box-sizing: border-box;
 
   &--contact {
     flex-direction: column;

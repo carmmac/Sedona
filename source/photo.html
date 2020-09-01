@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
+
 <head>
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1"
-    charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/logo-sedona-mobile.svg" alt="Логотип">
-      </a>
-      <nav class="main-nav">
+      <div class="page-header__container">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logo-sedona-mobile.svg" alt="Логотип">
+        </a>
+        <button class="page-header__button button-burger" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="page-header__button button-cross" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link" href="index.html">Главная</a>
@@ -57,7 +62,8 @@
       <section class="gallery">
         <header class="gallery__header">
           <h2 class="gallery__title text-title">Фото и видео</h2>
-          <p class="gallery__text text-description text-description--sub">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <p class="gallery__text text-description text-description--sub">Не можете решиться на путешествие из-за курса?<br>
+            Фотографии помогут вам забыть о политике и экономике.</p>
         </header>
 
         <ul class="gallery__list">
@@ -122,7 +128,8 @@
         <div class="video__wrapper">
           <div class="video__header">
             <h2 class="video__title text-title">Все еще сомневаетесь?</h2>
-            <p class="video__text text-description text-description--sub">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <p class="video__text text-description text-description--sub">Смотрите видеопрезентацию и скорее за
+              билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="video__content">
             <img src="img/video-mobile@1x.jpg" alt="Видео" class="video__img">
@@ -144,25 +151,44 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link social__link--twitter">Мы в Twitter</a>
+            <a href="#" class="social__link social__link--twitter">
+              <span class="visually-hidden">Мы в Twitter</span>
+              <img class="social__link-icon" src="img/icon-twitter.svg" alt="Twitter">
+            </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--facebook">Мы на Facebook</a>
+            <a href="#" class="social__link social__link--facebook">
+              <span class="visually-hidden">Мы на Facebook</span>
+              <img class="social__link-icon" src="img/icon-facebook.svg" alt="Facebook">
+            </a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__link--youtube">Мы на YouTube</a>
+            <a href="#" class="social__link social__link--youtube">
+              <span class="visually-hidden">Мы на YouTube</span>
+              <img class="social__link-icon" src="img/icon-youtube.svg" alt="YouTube">
+            </a>
           </li>
         </ul>
       </div>
       <!-- /.social -->
       <div class="page-footer__copyright copyright">
         <span class="copyright__text text-copyright">Разработано</span>
-        <div class="copyright__icon"></div>
+        <a class="copyright__link">
+          <svg class="copyright__icon" width="27" height="34" viewBox="0 0 27 35" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+              fill="black" />
+          </svg>
+        </a>
       </div>
       <!-- /.copyright -->
     </div>
     <!-- /.page-footer__wrapper -->
   </footer>
   <!-- /.page-footer -->
+
+  <script type="text/javascript" src="js/main-nav.js"></script>
 </body>
+
 </html>

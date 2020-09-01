@@ -1,12 +1,29 @@
 .map {
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
+  background-color: $bg-main;
 }
 
 .map__content {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
+  line-height: 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 27px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+  }
 
   @media (min-width: $tablet-width-min) {
     margin-bottom: 0;

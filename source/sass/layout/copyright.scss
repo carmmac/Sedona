@@ -1,7 +1,29 @@
 .copyright__text {
-  margin-left: 12px;
+  margin-right: 12px;
+}
 
-  @media (min-width: $tablet-width-min) {
-    margin: 0;
+.copyright__link {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  text-decoration: none;
+
+  &:hover .copyright__icon {
+    path {
+      fill: $bg-second;
+    }
   }
+
+  &:active .copyright__icon {
+    opacity: 0.3;
+
+    path {
+      fill: #000000;
+    }
+  }
+}
+
+.copyright__icon {
+  width: 27px;
+  height: 34px;
 }
