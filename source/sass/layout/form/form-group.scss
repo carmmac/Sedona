@@ -158,6 +158,15 @@
 
   @media (min-width: $tablet-width-min) {
     justify-content: space-between;
+
+    &::before,
+    &::after {
+      content: "";
+      flex: 1 0 auto;
+      width: 19%;
+      height: 1px;
+      background-color: $form-border-color-wide-screen;
+    }
   }
 }
 
@@ -207,24 +216,23 @@
   }
 
   &--feedback {
-
     @media (min-width: $tablet-width-min) {
       margin: 0 75px;
     }
   }
 }
 
-.form-group__title-decor {
-  display: none;
+// .form-group__title-decor {
+//   display: none;
 
-  @media (min-width: $tablet-width-min) {
-    display: block;
-    flex: 1 0 auto;
-    width: 19%;
-    height: 1px;
-    background-color: $form-border-color-wide-screen;
-  }
-}
+//   @media (min-width: $tablet-width-min) {
+//     display: block;
+//     flex: 1 0 auto;
+//     width: 19%;
+//     height: 1px;
+//     background-color: $form-border-color-wide-screen;
+//   }
+// }
 
 .form-group__item {
   display: flex;

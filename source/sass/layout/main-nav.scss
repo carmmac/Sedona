@@ -1,12 +1,12 @@
 .main-nav {
   position: relative;
   width: 100%;
+  min-height: 55px;
 
   &--closed {
-    & .main-nav__list {
-      @media (max-width: 767px) {
-        display: none;
-      }
+
+    @media (max-width: 767px) {
+      display: none;
     }
   }
 
@@ -27,13 +27,17 @@
   }
 
   @media (max-width: 767px) {
+    &--nojs {
+      display: block;
+    }
+
     &--nojs .main-nav__wrapper {
       position: static;
       min-height: 0;
     }
 
-    &--nojs .main-nav__list {
-      display: block;
+    &--nojs .main-nav__button--hidden {
+      display: none;
     }
 
     & .main-nav--closed {
