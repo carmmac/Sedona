@@ -19,8 +19,9 @@
       content: "";
       width: 56px;
       height: 56px;
-      top: -15px;
+      top: 50%;
       left: -80px;
+      transform: translateY(-50%);
       background-color: $bg-field;
       border: 5px solid $bg-field;
 
