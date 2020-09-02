@@ -58,50 +58,13 @@
   display: grid;
   grid-template-rows: 45px 66px;
   grid-template-columns: 1fr;
-
   margin: -45px 20px 0;
-  // grid-template-columns: repeat(4, 1fr);
-  // grid-template-areas:
-  //   "vol vol vol vol"
-  //   "rpt . subs flsc";
-
-
 
   @media (min-width: $tablet-width-min) {
     display: flex;
     align-items: center;
     height: 93px;
-    // grid-template-rows: 93px;
-    // grid-template-columns: 15% 60% auto auto;
     margin: -93px 0 0;
-
     background-color: rgba(0, 0, 0, 0.6);
   }
-  // position: relative;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // height: 45px;
-  // margin: -45px 20px 0;
-  //
-
-  // &::after {
-  //   position: absolute;
-  //   content: "";
-  //   width: 100%;
-  //   height: 66px;
-  //   left: 0;
-  //   bottom: -66px;
-  //   background-color: #f2f2f2;
-  //   z-index: -1;
-
-  //   @media (min-width: $tablet-width-min) {
-  //     display: none;
-  //   }
-  // }
-
-  // @media (min-width: $tablet-width-min) {
-  //   height: 93px;
-  //   margin: -93px 0 0;
-  // }
 }

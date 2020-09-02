@@ -10,6 +10,7 @@
   &--selection {
     position: relative;
     margin-left: 80px;
+
     @include text-title;
     text-transform: none;
     cursor: pointer;
@@ -56,6 +57,7 @@
     @media (min-width: $desktop-width-min) {
       margin: 0;
       margin-right: 16px;
+      
       span {
         display: none;
       }

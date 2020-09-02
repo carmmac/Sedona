@@ -5,6 +5,7 @@
   flex-grow: 1;
   background-color: $bg-field;
   overflow: hidden;
+  
   @include text-title;
 
   @media (min-width: $tablet-width-min) {
