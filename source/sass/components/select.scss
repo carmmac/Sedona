@@ -1,0 +1,10 @@
+.select {
+
+  &:checked ~ .label--impression::after {
+    display: block;
+  }
+
+  &:checked ~ .label--sights::after {
+    display: block;
+  }
+}

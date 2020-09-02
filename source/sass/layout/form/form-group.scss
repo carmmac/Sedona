@@ -1,9 +1,49 @@
 .form-group {
   background-color: $bg-main;
   min-width: 0;
+  border-top: 1px solid $form-border-color-mobile;
 
   @media (min-width: $tablet-width-min) {
     flex-basis: 100%;
+    border-top: none;
+  }
+
+  // @media (min-width: $desktop-width-min) {
+  //   @include form-group-decor-desktop;
+  // }
+
+  &--name {
+    @media (min-width: $tablet-width-min) {
+      order: 2;
+      flex-basis: 50%;
+      padding: 0;
+      padding-left: 58px;
+      border-left: 1px solid $form-border-color-wide-screen;
+      // grid-column: 2/3;
+      // grid-row: 1/2;
+      // padding-left: 60px;
+
+      @media (min-width: $desktop-width-min) {
+        padding-left: 80px;
+      }
+    }
+  }
+
+  &--contact {
+    padding-bottom: 28px;
+
+    @media (min-width: $tablet-width-min) {
+      order: 3;
+      padding: 0;
+      margin-top: 72px;
+      margin-bottom: 52px;
+      // grid-column: 1/3;
+      // grid-row: 2/3;
+
+      @media (min-width: $desktop-width-min) {
+        margin-top: 70px;
+      }
+    }
   }
 
   &--impression {
@@ -18,34 +58,21 @@
     }
   }
 
-  &--name {
-    @media (min-width: $tablet-width-min) {
-      order: 2;
-      flex-basis: 50%;
-      // grid-column: 2/3;
-      // grid-row: 1/2;
-      padding: 0;
-      // padding-left: 60px;
-    }
-  }
-
-  &--contact {
-    @media (min-width: $tablet-width-min) {
-      order: 3;
-      // grid-column: 1/3;
-      // grid-row: 2/3;
-    }
-  }
-
   &--sights {
     padding-top: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 
     @media (min-width: $tablet-width-min) {
       order: 4;
       // grid-column: 1/3;
       // grid-row: 3 / 4;
       align-items: center;
+      padding: 0;
+      margin-bottom: 75px;
+    }
+
+    @media (min-width: $desktop-width-min) {
+      margin-bottom: 74px;
     }
   }
 
@@ -54,20 +81,24 @@
 
     @media (min-width: $tablet-width-min) {
       order: 5;
+      padding: 0;
+      margin-bottom: 58px;
       // grid-column: 1/3;
       // grid-row: 4/5;
     }
   }
 
   &--submit {
-    padding: 0;
+    padding: 0 20px;
+    border-top: none;
 
     @media (min-width: $tablet-width-min) {
+      padding: 0;
       order: 6;
-      // grid-column: 1/3;
-      // grid-row: 5/6;
       flex-direction: row;
       align-items: center;
+      // grid-column: 1/3;
+      // grid-row: 5/6;
     }
   }
 }
@@ -76,28 +107,188 @@
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  flex-grow: 1;
+  justify-content: space-between;
+
+  &--contact {
+    @media (min-width: $desktop-width-min) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      // flex-direction: row;
+      // align-items: center;
+      // flex-wrap: wrap;
+    }
+  }
+}
+
+.form-group__title-wrapper {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--contact {
+    margin-bottom: 17px;
+
+    @media (min-width: $tablet-width-min) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width-min) {
+      margin-bottom: 72px;
+    }
+  }
+
+  &--sights {
+    @media (min-width: $tablet-width-min) {
+      align-self: stretch;
+      margin-bottom: 48px;
+    }
+  }
+
+  &--feedback {
+    margin-bottom: 15px;
+
+    @media (min-width: $tablet-width-min) {
+      margin-bottom: 55px;
+    }
+  }
+
+  @media (min-width: $tablet-width-min) {
+    justify-content: space-between;
+
+    &::before,
+    &::after {
+      content: "";
+      flex: 1 0 auto;
+      width: 19%;
+      height: 1px;
+      background-color: $form-border-color-wide-screen;
+    }
+  }
 }
 
 .form-group__title {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
 
   &--name {
-    align-self: flex-start;
+    @media (min-width: $tablet-width-min) {
+      align-self: flex-start;
+      margin-bottom: 55px;
+    }
+  }
+
+  &--contact {
+    margin-bottom: 0;
+
+    @media (min-width: $tablet-width-min) {
+      margin: 0 62px;
+    }
   }
 
   &--impression {
-    align-self: flex-start;
+    @media (min-width: $tablet-width-min) {
+      align-self: flex-start;
+      margin-bottom: 55px;
+    }
+
+    @media (min-width: $desktop-width-min) {
+      margin-left: 72px;
+    }
+  }
+
+  &--sights {
+    margin-bottom: 0;
+
+    @media (max-width: 767px) {
+      br {
+        display: none;
+      }
+    }
+
+    @media (min-width: $tablet-width-min) {
+      margin: 0 62px;
+    }
+  }
+
+  &--feedback {
+    @media (min-width: $tablet-width-min) {
+      margin: 0 75px;
+    }
   }
 }
+
+// .form-group__title-decor {
+//   display: none;
+
+//   @media (min-width: $tablet-width-min) {
+//     display: block;
+//     flex: 1 0 auto;
+//     width: 19%;
+//     height: 1px;
+//     background-color: $form-border-color-wide-screen;
+//   }
+// }
 
 .form-group__item {
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
+
+  &--name {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   &--contact {
     flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 14px;
+
+    @media (min-width: $tablet-width-min) {
+      margin-bottom: 25px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width-min) {
+      flex-direction: row;
+      align-items: center;
+      // flex-basis: 50%;
+      margin: 0;
+    }
+  }
+
+  &--impression {
+    height: 56px;
+    margin-bottom: 22px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &--sights {
+    height: 56px;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width-min) {
+      margin: 0;
+    }
   }
 }
 
@@ -108,12 +299,21 @@
 
   @media (min-width: $tablet-width-min) {
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    flex-basis: 75%;
+    width: 71%; // 461/648=71%
+  }
+
+  @media (min-width: $desktop-width-min) {
+    width: 100%;
   }
 }
 
 .form-group__fields {
   display: flex;
   width: 100%;
+
+  @media (min-width: $desktop-width-min) {
+    flex-basis: 65%;
+  }
 }
