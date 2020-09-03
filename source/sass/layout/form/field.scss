@@ -17,6 +17,18 @@
     padding-top: 18px;
     padding-left: 22px;
     padding-bottom: 14px;
+
+    &:hover {
+      background-color: $form-interaction-color;
+    }
+
+    &:focus {
+      padding-top: calc(#{$field-text-padding-top} - #{$field-text-focus-border});
+      padding-left: calc(#{$field-text-padding-left} - #{$field-text-focus-border});;
+      padding-bottom: calc(#{$field-text-padding-bottom} - #{$field-text-focus-border});;
+      background-color: #ffffff;
+      border: $field-text-focus-border solid $form-interaction-color;
+    }
   }
 
   &--area {

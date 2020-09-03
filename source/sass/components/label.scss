@@ -37,6 +37,22 @@
       content: "";
     }
 
+    &:hover {
+      &::before {
+        background-color: $form-interaction-color;
+      }
+    }
+
+    &:active {
+      &::before {
+        background-color: #d5d5d5;
+      }
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+
     @media (min-width: $tablet-width-min) {
       margin-left: 75px;
       font-size: 18px;
