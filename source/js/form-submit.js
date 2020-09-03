@@ -21,6 +21,7 @@ reviewForm.addEventListener('submit', event => {
 
     if (field.validity.valid) {
       validFields++;
+      form.elements[f].classList.remove('field-invalid');
     } else{
       form.elements[f].classList.add('field-invalid');
     }
