@@ -42,18 +42,18 @@
 }
 
 .popup__button-wrapper {
-  align-self: stretch;
-  padding: 20px;
-  background-color: #f2f2f2;
-}
-
-.popup__button {
   &--success {
-    width: 100%;
+    align-self: stretch;
+    padding: 20px;
+    background-color: #f2f2f2;
   }
 
   &--failure {
-    width: 180px;
-    margin: 0 auto 35px;
+    align-self: stretch;
+    padding: 0 70px 35px;
   }
+}
+
+.popup__button {
+  width: 100%;
 }
