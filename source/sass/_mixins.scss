@@ -21,6 +21,7 @@
 }
 
 @mixin button-style {
+  padding: 0;
   border: none;
   font-weight: $weight-bold;
   font-size: 21px;
