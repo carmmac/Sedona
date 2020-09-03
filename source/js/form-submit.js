@@ -3,7 +3,9 @@ const reviewForm = document.querySelector('.review-form'),
   popupSuccess = document.querySelector('.popup--success'),
   popupFailure = document.querySelector('.popup--failure'),
   popupBtnSuccess = document.querySelector('.popup__button--success'),
-  popupBtnFailure = document.querySelector('.popup__button--failure');
+  popupBtnFailure = document.querySelector('.popup__button--failure'),
+  formField = document.querySelector('.field');
+
 
 
 popup.classList.add('visually-hidden');
@@ -19,7 +21,8 @@ reviewForm.addEventListener('submit', event => {
 
     if (field.validity.valid) {
       validFields++;
-      console.log(validFields);
+    } else{
+      form.elements[f].classList.add('field-invalid');
     }
   }
 
