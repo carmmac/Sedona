@@ -38,4 +38,9 @@
     background-color: $bg-second;
     color: #ffffff;
   }
+
+  &--player {
+    line-height: 0;
+    background-color: transparent;
+  }
 }

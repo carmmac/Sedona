@@ -27,32 +27,5 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  cursor: pointer;
 }
-
-// @mixin form-group-decor-desktop {
-//   &::before,
-//   &::after {
-//     position: absolute;
-//     content: "";
-//     height: 1px;
-//     background-color: $form-border-color-wide-screen;
-
-//     @media (min-width: $tablet-width-min) {
-//       width: 32%;
-//     }
-
-//     @media (min-width: $desktop-width-min) {
-//       width: 30%;
-//     }
-//   }
-
-//   &::before {
-//     top: 10px;
-//     right: 0;
-//   }
-
-//   &::after {
-//     top: 10px;
-//     left: 0;
-//   }
-// }
