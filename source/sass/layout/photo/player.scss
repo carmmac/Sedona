@@ -111,12 +111,36 @@
     height: 20px;
   }
 
+  &:hover {
+    path {
+      fill: #000000;
+    }
+  }
+
+  &:active {
+    path {
+      fill: rgba(0, 0, 0, 0.3);
+    }
+  }
+
   @media (min-width: $tablet-width-min) {
     margin-top: auto;
     margin-bottom: auto;
 
     path {
       fill: #ffffff;
+    }
+
+    &:hover {
+      path {
+        fill: rgba(255, 255, 255, 0.6);
+      }
+    }
+
+    &:active {
+      path {
+        fill: rgba(255, 255, 255, 0.3);
+      }
     }
   }
 }
