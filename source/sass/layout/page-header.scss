@@ -40,7 +40,15 @@
 
 .page-header__logo {
   margin-bottom: -28px;
+  box-shadow: none;
+}
+
+.page-header__logo-img {
   width: 102px;
   height: 84px;
-  box-shadow: none;
+
+  @media (min-width: $desktop-width-min) {
+    width: 187px;
+    height: 97px;
+  }
 }
