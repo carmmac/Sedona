@@ -101,11 +101,12 @@
 
 .advantage__img {
   max-width: 100%;
-  height: auto;
+  height: 260px;
 
   @media (min-width: $tablet-width-min) {
     flex-basis: 66%;
     flex-grow: 1;
+    height: 256px;
   }
 }
 

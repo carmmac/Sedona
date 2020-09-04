@@ -15,17 +15,18 @@
 }
 
 .likes__icon {
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.likes__icon-img {
   width: 23px;
   height: 21px;
-  margin-right: 14px;
-  opacity: 0.3;
-  background-image: url("../img/icon-like.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
 
   @media (min-width: $desktop-width-min) {
-    filter: brightness(0) invert(1);
-    opacity: 1;
+    path {
+      opacity: 1;
+      fill: #ffffff;
+    }
   }
 }
