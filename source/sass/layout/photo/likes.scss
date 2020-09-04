@@ -23,4 +23,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
+
+  @media (min-width: $desktop-width-min) {
+    filter: brightness(0) invert(1);
+    opacity: 1;
+  }
 }

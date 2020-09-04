@@ -1,7 +1,8 @@
 .popup {
-  position: absolute;
+  position: fixed;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,13 +11,13 @@
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   z-index: 1; //* в Firefox просвечивают лейблы
 
-  &--success {
-    bottom: 68px;
-  }
+  // &--success {
+  //   bottom: 68px;
+  // }
 
-  &--failure {
-    bottom: 438px;
-  }
+  // &--failure {
+  //   bottom: 438px;
+  // }
 }
 
 .popup__header {
