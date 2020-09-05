@@ -1,7 +1,141 @@
 .label {
   margin: 0;
+  display: block;
+
+  &--text {
+    @include text-description;
+    line-height: 26px;
+  }
+
+  &--selection {
+    position: relative;
+    margin-left: 80px;
+
+    @include text-title;
+    text-transform: none;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 56px;
+      height: 56px;
+      top: 50%;
+      left: -80px;
+      transform: translateY(-50%);
+      background-color: $bg-field;
+      border: 5px solid $bg-field;
+
+      @media (min-width: $tablet-width-min) {
+        left: -75px;
+      }
+    }
+
+    &::after {
+      display: none;
+      position: absolute;
+      content: "";
+    }
+
+    &:hover {
+      &::before {
+        background-color: $form-interaction-color;
+      }
+    }
+
+    &:active {
+      &::before {
+        background-color: #d5d5d5;
+      }
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
+
+    @media (min-width: $tablet-width-min) {
+      margin-left: 75px;
+      font-size: 18px;
+    }
+  }
 
   &--name {
     margin-right: 14px;
+  }
+
+  &--contact {
+    margin-left: 22px;
+  }
+
+  &--phone {
+    margin-bottom: 8px;
+
+    @media (min-width: $desktop-width-min) {
+      margin: 0;
+      margin-right: 16px;
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  &--email {
+    margin-bottom: 5px;
+
+    @media (min-width: $desktop-width-min) {
+      margin: 0;
+      margin-right: 18px;
+    }
+  }
+
+  &--impression {
+    &::before {
+      border-radius: 50%;
+    }
+
+    &::after {
+      width: 22px;
+      height: 22px;
+      top: 50%;
+      left: -63px;
+      transform: translateY(-50%);
+      background-color: #000000;
+      border: 3px solid #000000;
+      border-radius: 50%;
+
+      @media (min-width: $tablet-width-min) {
+        left: -58px;
+      }
+    }
+  }
+
+  &--sights {
+    &::before {
+      border-radius: 5%;
+
+      @media (min-width: $tablet-width-min) {
+        left: -81px;
+      }
+    }
+
+    &::after {
+      width: 23px;
+      height: 16px;
+      top: 50%;
+      left: -63px;
+      transform: translateY(-50%);
+      background-image: url("../img/icon-tick.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media (min-width: $tablet-width-min) {
+        left: -64px;
+      }
+    }
+
+    @media (min-width: $tablet-width-min) {
+      margin-left: 81px;
+    }
   }
 }

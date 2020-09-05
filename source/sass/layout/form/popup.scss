@@ -1,0 +1,59 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  background-color: $bg-main;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  z-index: 1; //* в Firefox просвечивают лейблы
+
+  // &--success {
+  //   bottom: 68px;
+  // }
+
+  // &--failure {
+  //   bottom: 438px;
+  // }
+}
+
+.popup__header {
+  &--success {
+    padding: 38px 0 40px;
+  }
+
+  &--failure {
+    padding: 40px 0 22px;
+  }
+}
+
+.popup__title {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.popup__text {
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+}
+
+.popup__button-wrapper {
+  &--success {
+    align-self: stretch;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+
+  &--failure {
+    align-self: stretch;
+    padding: 0 70px 35px;
+  }
+}
+
+.popup__button {
+  width: 100%;
+}

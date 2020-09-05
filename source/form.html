@@ -19,7 +19,7 @@
         </button>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="page-header__button button-cross" type="button">
+        <button class="page-header__button main-nav__button main-nav__button--hidden button-cross" type="button">
           <span class="visually-hidden">Закрыть меню</span>
         </button>
         <div class="main-nav__wrapper">
@@ -54,7 +54,7 @@
       </h1>
       <div class="review-intro page-intro">
         <div class="page-intro__background">
-          <img src="img/text-sedona.svg" alt="SEDONA" class="page-intro__img">
+          <img width="229" height="39" src="img/text-sedona.svg" alt="SEDONA" class="page-intro__img">
         </div>
         <div class="page-intro__decoration"></div>
       </div>
@@ -67,42 +67,45 @@
           </p>
         </div>
         <!-- /.review__header -->
-        <form action="https://echo.htmlacademy.ru" method="POST" class="review-form">
+        <form action="https://echo.htmlacademy.ru" method="POST" class="review-form" id="review-form">
           <div class="review-form__group form-group form-group--name">
             <h2 class="form-group__title form-group__title--name text-title ">Представьтесь:</h2>
             <div class="form-group__list">
-              <div class="form-group__item">
+              <div class="form-group__item form-group__item--name">
                 <label for="firstname" class="label label--text label--name">ИМЯ*:</label>
-                <input type="text" class="field field--text" name="firstname" id="firstname" value="Петр" required>
+                <input type="text" class="field field--text" name="firstname" id="firstname" placeholder="Петр" required>
               </div>
-              <div class="form-group__item">
+              <div class="form-group__item form-group__item--name">
                 <label for="lastname" class="label label--text label--name">ФАМИЛИЯ*:</label>
-                <input type="text" class="field field--text" name="lastname" id="lastname" value="Иванов" required>
+                <input type="text" class="field field--text" name="lastname" id="lastname" placeholder="Иванов" required>
               </div>
-              <div class="form-group__item">
+              <div class="form-group__item  form-group__item--name">
                 <label for="middlename" class="label label--text label--name">ОТЧЕСТВО:</label>
-                <input type="text" class="field field--text" name="middlename" id="middlename" value="Александрович"
+                <input type="text" class="field field--text" name="middlename" id="middlename" placeholder="Александрович"
                   required>
               </div>
             </div>
           </div>
           <!-- /.form-group -->
           <div class="review-form__group form-group form-group--contact">
-            <h2 class="form-group__title text-title">Контактная информация:</h2>
-            <div class="form-group__list">
-              <div class="form-group__item form-group__item--contact">
-                <label for="tel" class="label label--text">Контактный телефон*:</label>
+            <div class="form-group__title-wrapper form-group__title-wrapper--contact">
+              <h2 class="form-group__title form-group__title--contact text-title">Контактная информация:</h2>
+            </div>
+            <div class="form-group__list form-group__list--contact">
+              <div class="form-group__item form-group__item--contact form-group__item--phone">
+                <label for="tel" class="label label--contact label--phone label--text"><span>Контактный
+                  </span>телефон*:</label>
                 <div class="form-group__fields">
-                  <input type="tel" class="field field--text" name="tel" id="tel" placeholder="Введите телефон"
-                    required>
-                  <div class="field-icon field-icon--tel"></div>
+                  <input type="tel" class="field field--phone field--text" name="tel" id="tel"
+                    placeholder="Введите телефон" required>
+                  <div class="field-icon field-icon--phone"></div>
                 </div>
               </div>
               <div class="form-group__item form-group__item--contact">
-                <label for="email" class="label label--text">Электронная почта*:</label>
+                <label for="email" class="label label--contact label--email label--text">Электронная почта*:</label>
                 <div class="form-group__fields">
-                  <input type="email" class="field field--text" name="email" id="email" placeholder="Введите e-mail"
-                    required>
+                  <input type="email" class="field field--email field--text" name="email" id="email"
+                    placeholder="Введите e-mail" required>
                   <div class="field-icon field-icon--email"></div>
                 </div>
               </div>
@@ -112,53 +115,78 @@
           <!-- /.form-group -->
           <div class="review-form__group form-group form-group--impression">
             <h2 class="form-group__title form-group__title--impression text-title">Ваше Общее впечатление:</h2>
-            <div class="form-group__item">
-              <input type="radio" class="hidden" name="impression" id="positive" value="positive" checked>
-              <label for="positive" class="label label--selection">Скорее положительное</label>
+            <div class="form-group__item form-group__item--impression">
+              <input type="radio" class="select hidden" name="impression" id="positive" value="positive" checked>
+              <label for="positive" class="label label--selection label--impression">Скорее положительное</label>
             </div>
-            <div class="form-group__item">
-              <input type="radio" class="hidden" name="impression" id="negative" value="negative">
-              <label for="negative" class="label label--selection">Скорее отрицательное</label>
+            <div class="form-group__item form-group__item--impression">
+              <input type="radio" class="select hidden" name="impression" id="negative" value="negative">
+              <label for="negative" class="label label--selection label--impression">Скорее отрицательное</label>
             </div>
-            <div class="form-group__item">
-              <input type="radio" class="hidden" name="impression" id="neutral" value="neutral">
-              <label for="neutral" class="label label--selection">Затрудняюсь ответить</label>
+            <div class="form-group__item form-group__item--impression">
+              <input type="radio" class="select hidden" name="impression" id="neutral" value="neutral">
+              <label for="neutral" class="label label--selection label--impression">Затрудняюсь ответить</label>
             </div>
           </div>
           <!-- /.form-group -->
           <div class="review-form__group form-group form-group--sights">
-            <h2 class="form-group__title text-title">Посещенные достопримечательности:</h2>
+            <div class="form-group__title-wrapper form-group__title-wrapper--sights">
+              <h2 class="form-group__title form-group__title--sights text-title">Посещенные<br> достопримечательности:
+              </h2>
+            </div>
             <div class="form-group__checklist checklist">
-              <div class="form-group__item checklist__item">
-                <input type="checkbox" class="hidden" name="bridge" id="bridge" checked>
-                <label for="bridge" class="label label--selection">Мост Дьявола</label>
+              <div class="form-group__item form-group__item--sights checklist__item">
+                <input type="checkbox" class="select hidden" name="bridge" id="bridge" checked>
+                <label for="bridge" class="label label--selection label--sights">Мост Дьявола</label>
               </div>
-              <div class="form-group__item checklist__item">
-                <input type="checkbox" class="hidden" name="mountain" id="mountain" checked>
-                <label for="mountain" class="label label--selection">Гора-Колокол</label>
+              <div class="form-group__item form-group__item--sights checklist__item">
+                <input type="checkbox" class="select hidden" name="mountain" id="mountain" checked>
+                <label for="mountain" class="label label--selection label--sights">Гора-Колокол</label>
               </div>
-              <div class="form-group__item checklist__item">
-                <input type="checkbox" class="hidden" name="park" id="park" checked>
-                <label for="park" class="label label--selection">Слайд-парк</label>
+              <div class="form-group__item form-group__item--sights checklist__item">
+                <input type="checkbox" class="select hidden" name="park" id="park" checked>
+                <label for="park" class="label label--selection label--sights">Слайд-парк</label>
               </div>
-              <div class="form-group__item checklist__item">
-                <input type="checkbox" class="hidden" name="rocks" id="rocks">
-                <label for="rocks" class="label label--selection">Красные скалы</label>
+              <div class="form-group__item form-group__item--sights checklist__item">
+                <input type="checkbox" class="select hidden" name="rocks" id="rocks">
+                <label for="rocks" class="label label--selection label--sights">Красные скалы</label>
               </div>
             </div>
           </div>
           <!-- /.form-group -->
           <div class="review-form__group form-group form-group--feedback">
-            <h2 class="form-group__title text-title">Опишите свои эмоции:</h2>
+            <div class="form-group__title-wrapper form-group__title-wrapper--feedback">
+              <h2 class="form-group__title form-group__title--feedback text-title">Опишите свои эмоции:</h2>
+            </div>
             <textarea class="field field--area" name="comment" id="comment"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
           <!-- /.form-group -->
           <div class="review-form__group form-group form-group--submit">
-            <button class="button button--submit">ОТПРАВИТЬ ОТЗЫВ</button>
+            <button form="review-form" class="button button--submit" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
             <span class="review-form__notif">* — обязательные поля</span>
           </div>
           <!-- /.form-group -->
+          <div class="popup popup--success visually-hidden">
+            <div class="popup__header popup__header--success">
+              <p class="popup__title text-title">Ваш отзыв отправлен!</p>
+              <p class="popup__text text-description">Спасибо за ваше участие,<br> ваш отзыв уже поступил к нам.<br>В ближайшее
+                время мы<br> опубликуем его на сайте.</p>
+            </div>
+            <div class="popup__button-wrapper popup__button-wrapper--success">
+              <button class="popup__button popup__button--success button button--popup" type="button">ЗАкРЫТЬ ОКНО</button>
+            </div>
+          </div>
+          <div class="popup popup--failure visually-hidden">
+            <div class="popup__header popup__header--failure">
+              <p class="popup__title text-title">ЧТО-ТО ПОШЛО НЕ ТАК!</p>
+              <p class="popup__text text-description">Проверьте поля, выделенные<br> красным, скорее всего вы<br> забыли их
+                заполнить</p>
+            </div>
+            <div class="popup__button-wrapper popup__button-wrapper--failure">
+              <button class="popup__button popup__button--failure button button--popup" type="button">OK</button>
+            </div>
+          </div>
         </form>
         <!-- /.review-form -->
       </section>
@@ -210,6 +238,7 @@
   <!-- /.page-footer -->
 
   <script type="text/javascript" src="js/main-nav.js"></script>
+  <script type="text/javascript" src="js/form-submit.js"></script>
 </body>
 
 </html>

@@ -31,4 +31,16 @@
       flex-basis: 50%;
     }
   }
+
+  &--popup {
+    padding-top: 18px;
+    padding-bottom: 14px;
+    background-color: $bg-second;
+    color: #ffffff;
+  }
+
+  &--player {
+    line-height: 0;
+    background-color: transparent;
+  }
 }

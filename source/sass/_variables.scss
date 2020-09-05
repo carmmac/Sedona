@@ -12,8 +12,19 @@ $bg-second: #81b3d2;
 $bg-field: #f2f2f2;
 $bg-hover: #669ec0;
 $bg-active: #5496bd;
+$form-border-color-mobile: #e5e5e5;
+$form-border-color-wide-screen: #dbdbdb;
+$form-interaction-color: #e5e5e5;
+$form-invalid-border-color: red;
 
 // Viewports
 $mobile-width-min: 320px;
 $tablet-width-min: 768px;
 $desktop-width-min: 1200px;
+
+// length
+$field-text-padding-top: 18px;
+$field-text-padding-left: 22px;
+$field-text-padding-bottom: 14px;
+$field-text-focus-border: 4px;
+$field-text-invalid-border: 2px;

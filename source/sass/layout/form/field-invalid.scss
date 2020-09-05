@@ -1,0 +1,6 @@
+.field-invalid {
+  padding-top: calc(#{$field-text-padding-top} - #{$field-text-invalid-border});
+  padding-left: calc(#{$field-text-padding-left} - #{$field-text-invalid-border});
+  padding-bottom: calc(#{$field-text-padding-bottom} - #{$field-text-invalid-border});
+  border: $field-text-invalid-border solid $form-invalid-border-color;
+}

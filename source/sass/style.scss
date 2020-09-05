@@ -8,6 +8,7 @@
 @import "base/normalize";
 @import "base/fonts.scss";
 @import "base/visually-hidden.scss";
+@import "base/hidden.scss";
 @import "base/text-title.scss";
 @import "base/text-description.scss";
 @import "base/text-copyright.scss";
@@ -41,17 +42,21 @@
 @import "layout/photo/photo-card.scss";
 @import "layout/photo/card-info.scss";
 @import "layout/photo/likes.scss";
-@import "layout/photo/likes-icon.scss";
 @import "layout/photo/video.scss";
+@import "layout/photo/player.scss";
 
 // form page
 @import "layout/form/review.scss";
 @import "layout/form/review-form.scss";
 @import "layout/form/form-group";
 @import "layout/form/field.scss";
+@import "layout/form/field-invalid.scss";
+@import "layout/form/field-icon.scss";
 @import "layout/form/checklist.scss";
+@import "layout/form/popup.scss";
 
 
 // COMPONENTS
 @import "components/button.scss";
 @import "components/label";
+@import "components/select.scss";

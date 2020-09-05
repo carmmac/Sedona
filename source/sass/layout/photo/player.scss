@@ -1,0 +1,145 @@
+.player__volume {
+  position: relative;
+  grid-row: 1 / 2;
+  grid-column: 1 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  @media (min-width: $tablet-width-min) {
+    order: 1;
+    flex-basis: 60%;
+    flex-grow: 1;
+    background-color: transparent;
+  }
+}
+
+.player__volume-bar {
+  position: relative;
+  flex-basis: 85%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    top: -3px;
+    left: 15%;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $tablet-width-min) {
+    flex-basis: 100%;
+  }
+}
+
+.player__icon-wrapper {
+  background-color: #f2f2f2;
+
+  &--replay {
+    grid-column: 1 / 2;
+  }
+
+  &--subs {
+    grid-column: 3 / 4;
+
+    @media (min-width: $tablet-width-min) {
+      order: 2;
+    }
+  }
+
+  &--fullscreen {
+    grid-column: 4 / 5;
+
+    @media (min-width: $tablet-width-min) {
+      order: 3;
+    }
+  }
+
+  @media (min-width: $tablet-width-min) {
+    background-color: transparent;
+  }
+}
+
+.player__button {
+  &--replay {
+    margin: 23px auto 23px 23px;
+
+    @media (min-width: $tablet-width-min) {
+      grid-column: 1 / 2;
+      margin-left: 35px;
+      margin-right: 42px;
+    }
+  }
+
+  &--subs {
+    margin: 23px 0;
+
+    @media (min-width: $tablet-width-min) {
+      grid-column: 3 / 4;
+      margin-left: 42px;
+    }
+  }
+
+  &--fullscreen {
+    margin: 23px 23px 23px 31px;
+
+    @media (min-width: $tablet-width-min) {
+      margin-right: 41px;
+    }
+  }
+}
+
+.player__icon {
+  &--replay {
+    width: 16px;
+    height: 20px;
+  }
+
+  &--subs {
+    width: 32px;
+    height: 20px;
+  }
+
+  &--fullscreen {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    path {
+      fill: #000000;
+    }
+  }
+
+  &:active {
+    path {
+      fill: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  @media (min-width: $tablet-width-min) {
+    margin-top: auto;
+    margin-bottom: auto;
+
+    path {
+      fill: #ffffff;
+    }
+
+    &:hover {
+      path {
+        fill: rgba(255, 255, 255, 0.6);
+      }
+    }
+
+    &:active {
+      path {
+        fill: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+}

@@ -1,23 +1,21 @@
 .review-form {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0 20px 48px;
+  margin-bottom: 48px;
 
   @media (min-width: $tablet-width-min) {
     flex-direction: row;
     flex-wrap: wrap;
     padding-left: 60px;
     padding-right: 60px;
+    margin-bottom: 61px;
   }
 
-  // @media (min-width: $tablet-width-min) {
-  //   display: grid;
-  //   grid-template-columns: 1fr 1fr;
-  //   grid-template-rows: 300px 250px 235px 240px 60px;
-  //   padding-left: 60px;
-  //   padding-right: 60px;
-  // }
+  @media (min-width: $desktop-width-min) {
+    margin-bottom: 66px;
+  }
 
   @media (min-width: $desktop-width-min) {
     padding-left: 120px;
@@ -29,8 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 20px 20px 25px;
 }
 
 .review-form__notif {
