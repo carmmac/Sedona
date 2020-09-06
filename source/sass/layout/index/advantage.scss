@@ -31,19 +31,19 @@
 
 .advantage__header {
   width: 100%;
-  padding: 28px 32px 24px;
+  // padding: 28px 32px 24px;
 
   &--explicit {
     background-color: $bg-second;
   }
+  //*pixel-perfect
+  // &--city {
+  //   padding: 34px 0 39px;
+  // }
 
-  &--city {
-    padding: 34px 0 39px;
-  }
-
-  &--bridge {
-    padding: 39px 0 35px;
-  }
+  // &--bridge {
+  //   padding: 39px 0 35px;
+  // }
 
   @media (min-width: $tablet-width-min) {
     padding: 0;
@@ -56,22 +56,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // margin-top: 34px;
-  // margin-bottom: 39px;
+  margin: 28px 32px 24px;
 
-  // &--bridge {
-  //   //*pixel-perfect
-  //   margin-top: 39px;
-  //   margin-bottom: 35px;
-  // }
+  //*pixel-perfect
+
 
   @media (min-width: $tablet-width-min) {
     flex-basis: 75%;
-    margin: auto;
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop-width-min) {
     flex-basis: 71%;
+  }
+
+  &--city {
+    margin: 34px 0 39px;
+
+    @media (min-width: $tablet-width-min) {
+      margin: 40px auto 44px;
+    }
+  }
+
+  &--bridge {
+    margin: 39px 0 35px;
+
+    @media (min-width: $tablet-width-min) {
+      margin: 45px auto 41px;
+    }
   }
 }
 
@@ -96,6 +108,10 @@
 
   &--explicit {
     color: #ffffff;
+  }
+
+  @media (min-width: $tablet-width-min) {
+    margin-bottom: 25px;
   }
 }
 
@@ -190,8 +206,7 @@
 
   @media (min-width: $tablet-width-min) {
     flex-direction: row;
-    margin-top: 57px;
-    margin-bottom: 59px;
+    margin: 57px 0 59px;
   }
 
   @media (min-width: $desktop-width-min) {

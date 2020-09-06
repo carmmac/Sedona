@@ -63,12 +63,13 @@
   width: 85%;
   margin: 0 auto;
   margin-top: 32px;
-  // margin-bottom: 11px;
 
   @media (min-width: $tablet-width-min) {
     max-width: 520px;
     margin-top: 44px;
     margin-bottom: 52px;
+    //*pixel-perfect
+    margin-bottom: 44px;
   }
 
   @media (min-width: $desktop-width-min) {
