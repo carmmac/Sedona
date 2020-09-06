@@ -11,11 +11,33 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+
   background-color: $bg-main;
+
+  @media(min-resolution: 2dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 768px auto;
+  }
 
   @media (min-width: $tablet-width-min) {
     height: 518px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+
+    @media(min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+
+    }
+  }
+
+  @media (min-width: $desktop-width-min) {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media(min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px auto;
+
+    }
   }
 }
 
