@@ -42,6 +42,16 @@
   flex-basis: 75%;
   margin-top: 9px;
 
+  &--gift {
+    //*pixel-perfect
+    margin-top: 12px;
+  }
+
+  &--food {
+    //*pixel-perfect
+    margin-top: 7px;
+  }
+
   @media (min-width: $tablet-width-min) {
     flex-direction: column;
     max-width: 75%;
@@ -54,6 +64,18 @@
   height: 38px;
   display: flex;
   margin-right: 10px;
+
+  &--house {
+    margin-right: 9px;
+  }
+
+  &--gift {
+    margin-right: 10px;
+  }
+
+  &--food {
+    margin-right: 10px;
+  }
 
   @media (min-width: $tablet-width-min) {
     width: 76px;

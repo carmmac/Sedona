@@ -22,6 +22,7 @@
 }
 
 .page-header__container {
+  min-height: 56px;
   position: relative;
   display: flex;
   flex-direction: row-reverse;
@@ -41,6 +42,7 @@
 .page-header__logo {
   margin-bottom: -28px;
   box-shadow: none;
+  line-height: 0;
 }
 
 .page-header__logo-img {
