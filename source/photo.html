@@ -12,7 +12,11 @@
     <div class="page-header__wrapper">
       <div class="page-header__container">
         <a class="page-header__logo" href="index.html">
-          <img src="img/logo-sedona-mobile.svg" alt="Логотип">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img width="102" height="84" src="img/logo-sedona-mobile.svg" alt="Логотип" class="page-header__logo-img">
+          </picture>
         </a>
         <button class="page-header__button button-burger" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -70,7 +74,14 @@
 
           <ul class="gallery__list">
             <li class="gallery__item gallery__item--main photo-card">
-              <img src="img/photo-sunset-mobile@1x.jpg" alt="Фото" class="photo-card__img photo-card__img--main">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-sunset-tablet@2x.jpg 2x, img/photo-sunset-tablet@1x.jpg 1x">
+                <img src="img/photo-sunset-mobile@1x.jpg" alt="Фото" class="photo-card__img photo-card__img--main"
+                  srcset="img/photo-sunset-mobile@2x.jpg 2x">
+              </picture>
               <div class="photo-card__info card-info">
                 <div class="card-info__description">
                   <h3 class="card-info__title">Неродные просторы</h3>
@@ -78,7 +89,8 @@
                 </div>
                 <div class="card-info__likes likes">
                   <a class="likes__icon">
-                    <svg class="likes__icon-img" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="likes__icon-img" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path opacity="0.3"
                         d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
                         fill="black" />
@@ -89,7 +101,14 @@
               </div>
             </li>
             <li class="gallery__item photo-card">
-              <img src="img/photo-cactus-mobile@1x.jpg" alt="Фото" class="photo-card__img">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-cactus-tablet@2x.jpg 2x, img/photo-cactus-tablet@1x.jpg 1x">
+                <img src="img/photo-cactus-mobile@1x.jpg" alt="Фото" class="photo-card__img"
+                  srcset="img/photo-cactus-mobile@2x.jpg 2x">
+              </picture>
               <div class="photo-card__info card-info">
                 <div class="card-info__description">
                   <h3 class="card-info__title">Местная растительность</h3>
@@ -97,7 +116,8 @@
                 </div>
                 <div class="card-info__likes likes">
                   <a class="likes__icon">
-                    <svg class="likes__icon-img" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="likes__icon-img" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path opacity="0.3"
                         d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
                         fill="black" />
@@ -108,7 +128,14 @@
               </div>
             </li>
             <li class="gallery__item photo-card">
-              <img src="img/photo-roads-mobile@1x.jpg" alt="Фото" class="photo-card__img">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-roads-tablet@2x.jpg 2x, img/photo-roads-tablet@1x.jpg 1x">
+                <img src="img/photo-roads-mobile@1x.jpg" alt="Фото" class="photo-card__img"
+                  srcset="img/photo-roads-mobile@2x.jpg 2x">
+              </picture>
               <div class="photo-card__info card-info">
                 <div class="card-info__description">
                   <h3 class="card-info__title">Дорога на север</h3>
@@ -116,7 +143,8 @@
                 </div>
                 <div class="card-info__likes likes">
                   <a class="likes__icon">
-                    <svg class="likes__icon-img" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="likes__icon-img" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path opacity="0.3"
                         d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
                         fill="black" />
@@ -127,7 +155,14 @@
               </div>
             </li>
             <li class="gallery__item photo-card">
-              <img src="img/photo-bridge-mobile@1x.jpg" alt="Фото" class="photo-card__img">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-bridge-tablet@2x.jpg 2x, img/photo-bridge-tablet@1x.jpg 1x">
+                <img src="img/photo-bridge-mobile@1x.jpg" alt="Фото" class="photo-card__img"
+                  srcset="img/photo-bridge-mobile@2x.jpg 2x">
+              </picture>
               <div class="photo-card__info card-info">
                 <div class="card-info__description">
                   <h3 class="card-info__title">Мост дьявола</h3>
@@ -135,7 +170,8 @@
                 </div>
                 <div class="card-info__likes likes">
                   <a class="likes__icon">
-                    <svg class="likes__icon-img" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="likes__icon-img" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path opacity="0.3"
                         d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
                         fill="black" />

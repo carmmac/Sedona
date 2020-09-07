@@ -12,7 +12,11 @@
     <div class="page-header__wrapper">
       <div class="page-header__container">
         <a class="page-header__logo">
-          <img src="img/logo-sedona-mobile.svg" alt="Логотип">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img width="102" height="84" src="img/logo-sedona-mobile.svg" alt="Логотип" class="page-header__logo-img">
+          </picture>
         </a>
         <button class="page-header__button button-burger" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -85,17 +89,17 @@
         <ul class="advantages__list">
           <li class="advantages__item advantage advantage--explicit">
             <div class="advantage__header advantage__header--explicit">
-              <div class="advantage__header-wrapper">
+              <div class="advantage__header-wrapper advantage__header-wrapper--city">
                 <h3 class="advantage__title advantage__title--explicit text-title">НАСТОЯЩИЙ<br> ГОРОДОК</h3>
                 <p class="advantage__number advantage__number--explicit text-description">— №1 —</p>
                 <p class="advantage__description advantage__description--explicit text-description">СЕДОНА НЕ АТТРАКЦИОН
                   ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
               </div>
             </div>
-            <img class="advantage__img" src="img/main-city-mobile@1x.jpg" alt="Фото города">
+            <div class="advantage__img advantage__img--city"></div>
             <div class="advantage__details detail">
               <div class="detail__item detail__item--house">
-                <div class="detail__icon">
+                <div class="detail__icon detail__icon--house">
                   <svg class="detail-icon detail-icon--house" width="39" height="37" viewBox="0 0 39 37" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -117,14 +121,14 @@
                     <path d="M30.1769 24.1128H28.6106V26.0968H30.1769V24.1128Z" fill="#81B3D2" />
                   </svg>
                 </div>
-                <div class="detail__header">
+                <div class="detail__header detail__header--house">
                   <p class="detail__title text-title text-title--detail">ЖИЛЬЕ</p>
                   <p class="detail__description text-description">Рекомендуем пожить в настоящем мотеле, все как в кино!
                   </p>
                 </div>
               </div>
               <div class="detail__item detail__item--gift">
-                <div class="detail__icon">
+                <div class="detail__icon detail__icon--gift">
                   <svg class="detail-icon detail-icon--gift" width="32" height="38" viewBox="0 0 32 38" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -132,13 +136,13 @@
                       fill="#81B3D2" />
                   </svg>
                 </div>
-                <div class="detail__header">
+                <div class="detail__header detail__header--gift">
                   <p class="detail__title text-title text-title--detail">СУВЕНИРЫ</p>
                   <p class="detail__description text-description">Не только китайского,<br> но и местного производства!</p>
                 </div>
               </div>
               <div class="detail__item detail__item--food">
-                <div class="detail__icon">
+                <div class="detail__icon detail__icon--food">
                   <svg class="detail-icon detail-icon--food" width="40" height="35" viewBox="0 0 40 35" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -162,9 +166,9 @@
                   </svg>
                 </div>
 
-                <div class="detail__header">
+                <div class="detail__header detail__header--food">
                   <p class="detail__title text-title text-title--detail">ЕДА</p>
-                  <p class="detail__description text-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ
+                  <p class="detail__description text-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, <br>Вы НЕ
                     разочаруетесь!</p>
                 </div>
               </div>
@@ -172,15 +176,15 @@
           </li>
           <!-- /.advantages__item -->
           <li class="advantages__item advantage advantage--explicit advantage--reverse">
-            <div class="advantage__header advantage__header--explicit">
-              <div class="advantage__header-wrapper">
+            <div class="advantage__header advantage__header--explicit ">
+              <div class="advantage__header-wrapper advantage__header-wrapper--bridge">
                 <h3 class="advantage__title advantage__title--explicit text-title">ТАМ ЕСТЬ<br> МОСТ ДЬЯВОЛА</h3>
                 <p class="advantage__number advantage__number--explicit text-description">— №2 —</p>
                 <p class="advantage__description advantage__description--explicit text-description">Да, по нему можно
                   пройти!<br> Если вы осмелитесь, конечно</p>
               </div>
             </div>
-            <img class="advantage__img" src="img/main-bridge-mobile@1x.jpg" alt="Фото города">
+            <div class="advantage__img advantage__img--bridge"></div>
           </li>
           <!-- /.advantages__item -->
           <li class="advantages__item advantage">
@@ -232,11 +236,11 @@
       </section>
       <!-- /.booking -->
 
-      <section class="map">
+      <div class="map">
         <div class="map__content">
-          <img src="img/bg-map-mobile@1x.jpg" alt="Карта" class="map__img">
+          <div class="map__img"></div>
         </div>
-      </section>
+      </div>
       <!-- /.map -->
     </div>
     <!-- /.page-main__wrapper -->
