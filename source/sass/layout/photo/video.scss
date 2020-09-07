@@ -20,8 +20,9 @@
 
   @media (min-width: $tablet-width-min) {
     max-width: 445px;
-    margin-top: 59px;
-    margin-bottom: 68px;
+    //*pixel-perfect
+    margin-top: 57px;
+    margin-bottom: 80px;
     padding: 0;
   }
 
@@ -38,9 +39,11 @@
 
 .video__title {
   margin-top: 0;
-  margin-bottom: 27px;
+  //*pixel-perfect
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width-min) {
+    margin-bottom: 33px;
     font-size: $font-size-wide-screen;
   }
 }

@@ -30,6 +30,11 @@
     left: 15%;
     border-radius: 50%;
     background-color: #ffffff;
+
+    //*pixel-perfect
+    @media (min-width: $tablet-width-min) {
+      left: 29%;
+    }
   }
 
   @media (min-width: $tablet-width-min) {
