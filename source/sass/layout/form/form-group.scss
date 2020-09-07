@@ -28,7 +28,8 @@
     @media (min-width: $tablet-width-min) {
       order: 3;
       padding: 0;
-      margin-top: 72px;
+      //*pixel-perfect
+      margin-top: 70px;
       margin-bottom: 52px;
 
       @media (min-width: $desktop-width-min) {
@@ -48,14 +49,16 @@
   }
 
   &--sights {
-    padding-top: 15px;
+    //*pixel-perfect
+    padding-top: 10px;
     padding-bottom: 25px;
 
     @media (min-width: $tablet-width-min) {
       order: 4;
       align-items: center;
       padding: 0;
-      margin-bottom: 75px;
+      //*pixel-perfect
+      margin-bottom: 40px;
     }
 
     @media (min-width: $desktop-width-min) {
@@ -129,7 +132,7 @@
   }
 
   &--feedback {
-    margin-bottom: 15px;
+    margin-bottom: 0;
 
     @media (min-width: $tablet-width-min) {
       margin-bottom: 55px;
@@ -152,13 +155,14 @@
 
 .form-group__title {
   margin: 0;
-  margin-bottom: 20px;
+  //*pixel-perfect
+  margin-bottom: 22px;
   padding: 0;
 
   &--name {
     @media (min-width: $tablet-width-min) {
       align-self: flex-start;
-      margin-bottom: 55px;
+      margin-bottom: 60px;
     }
   }
 
@@ -173,7 +177,8 @@
   &--impression {
     @media (min-width: $tablet-width-min) {
       align-self: flex-start;
-      margin-bottom: 55px;
+      //*pixel-perfect
+      margin-bottom: 60px;
     }
 
     @media (min-width: $desktop-width-min) {
@@ -196,6 +201,9 @@
   }
 
   &--feedback {
+    //*pixel-perfect
+    margin-bottom: 15px;
+
     @media (min-width: $tablet-width-min) {
       margin: 0 75px;
     }
@@ -238,7 +246,8 @@
 
   &--impression {
     height: 56px;
-    margin-bottom: 22px;
+    //*pixel-perfect
+    margin-bottom: 21px;
 
     &:last-child {
       margin-bottom: 0;
@@ -253,6 +262,14 @@
       margin-bottom: 0;
     }
 
+    &:nth-child(even) {
+      margin-left: 30px;
+    }
+
+    @media (min-width: $tablet-width-min) {
+      margin-bottom: 30px;
+    }
+
     @media (min-width: $desktop-width-min) {
       margin: 0;
     }
@@ -265,10 +282,13 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width-min) {
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 71%; // 461/648=71%
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 72%;
+    // flex-direction: row;
+    // justify-content: center;
+    // flex-wrap: wrap;
+    // width: 71%;
   }
 
   @media (min-width: $desktop-width-min) {
