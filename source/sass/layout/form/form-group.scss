@@ -249,10 +249,14 @@
   &--impression {
     height: 56px;
     //*pixel-perfect
-    margin-bottom: 21px;
+    margin-bottom: 14px;
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    @media (min-width: $tablet-width-min) {
+      margin-bottom: 21px;
     }
   }
 
@@ -265,7 +269,9 @@
     }
 
     &:nth-child(even) {
-      margin-left: 30px;
+      @media (min-width: $tablet-width-min) {
+        margin-left: 30px;
+      }
 
       @media (min-width: $desktop-width-min) {
         margin: 0;
