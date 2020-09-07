@@ -5,7 +5,8 @@
 }
 
 .card-info__description {
-  margin-bottom: 10px;
+  //*pixel-perfect
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width-min) {
     margin-bottom: 0;

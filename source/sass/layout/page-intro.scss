@@ -1,7 +1,7 @@
 .page-intro__background {
   display: flex;
   flex-direction: column;
-  height: 214px;
+  height: 158px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 100%;
@@ -20,7 +20,7 @@
 .page-intro__img {
   width: 229px;
   height: 39px;
-  margin: auto;
+  margin: 52px auto 10px;
 
   @media (min-width: $tablet-width-min) {
     width: 457px;
