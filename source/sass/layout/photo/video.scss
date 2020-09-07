@@ -27,8 +27,9 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    margin-top: 63px;
-    margin-bottom: 66px;
+    //*pixel-perfect
+    margin-top: 60px;
+    margin-bottom: 79px;
   }
 }
 

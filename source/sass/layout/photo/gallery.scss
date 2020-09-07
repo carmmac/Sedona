@@ -19,6 +19,12 @@
     max-width: 458px;
     margin: 64px auto 78px;
   }
+
+  //*pixel-perfect
+  @media (min-width: $desktop-width-min) {
+    margin-top: 102px;
+    margin-bottom: 80px;
+  }
 }
 
 .gallery__title {
