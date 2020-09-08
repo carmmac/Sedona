@@ -17,6 +17,10 @@
 .likes__icon {
   margin-right: 14px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width-min) {
+    margin-right: 10px;
+  }
 }
 
 .likes__icon-img {

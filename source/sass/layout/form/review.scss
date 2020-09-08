@@ -12,7 +12,8 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    margin-top: 107px;
+    //*pixel-perfect
+    margin-top: 112px;
     margin-bottom: 56px;
   }
 }
@@ -22,7 +23,12 @@
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width-min) {
+    margin-bottom: 30px;
     font-size: $font-size-wide-screen;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin-bottom: 35px;
   }
 }
 

@@ -1,9 +1,10 @@
 .checklist__item {
   @media (min-width: $tablet-width-min) {
-    flex-basis: 50%;
+    // flex-basis: 50%;
+    // flex-grow: 1;
   }
 
   @media (min-width: $desktop-width-min) {
-    flex-basis: 25%;
+    // flex-basis: 25%;
   }
 }
