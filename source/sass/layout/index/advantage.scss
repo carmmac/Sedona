@@ -1,4 +1,5 @@
 .advantage {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,19 +32,27 @@
 
 .advantage__header {
   width: 100%;
-  // padding: 28px 32px 24px;
+
+  &--decor {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 85%;
+      height: 1px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #d6d6d6;
+
+      @media (min-width: $tablet-width-min) {
+        display: none;
+      }
+    }
+  }
 
   &--explicit {
     background-color: $bg-second;
   }
-  //*pixel-perfect
-  // &--city {
-  //   padding: 34px 0 39px;
-  // }
-
-  // &--bridge {
-  //   padding: 39px 0 35px;
-  // }
 
   @media (min-width: $tablet-width-min) {
     padding: 0;
@@ -56,12 +65,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 28px auto 24px;
+  margin: 28px 20px 24px;
 
   //*pixel-perfect
   @media (min-width: $tablet-width-min) {
     flex-basis: 75%;
     margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop-width-min) {
