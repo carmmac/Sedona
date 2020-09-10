@@ -56,3 +56,31 @@
     }
   }
 }
+
+.booking__link {
+  padding-top: 15px;
+  padding-bottom: 17px;
+  border: none;
+  font-weight: $weight-bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  background-color: $bg-second;
+
+  &:hover {
+    background-color: $bg-hover;
+  }
+
+  &:active {
+    background-color: $bg-active;
+    color: rgba(225, 225, 225, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
