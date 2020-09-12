@@ -8,5 +8,12 @@
   min-height: 100%;
   margin: 0;
   background-color: $bg-main;
+  // min-width: 320px;
+}
+
+.page__body-container {
   min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.1);
 }

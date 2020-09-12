@@ -15,10 +15,9 @@
   @media (min-width: $tablet-width-min) {
     flex-direction: row;
   }
-
-  @media (min-width: $desktop-width-min) {
-    max-width: 1200px;
-  }
+  // @media (min-width: $desktop-width-min) {
+  //   max-width: 1200px;
+  // }
 }
 
 .page-header__container {

@@ -19,10 +19,9 @@
     padding: 36px 0;
     justify-content: space-around;
   }
-
-  @media (min-width: $desktop-width-min) {
-    max-width: 1200px;
-  }
+  // @media (min-width: $desktop-width-min) {
+  //   max-width: 1200px;
+  // }
 }
 
 .page-footer__hashtag {
