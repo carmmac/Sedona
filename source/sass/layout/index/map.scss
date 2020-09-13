@@ -10,21 +10,21 @@
 }
 
 .map__content {
-  position: relative;
+  // position: relative;
 
-  &::after {
-    position: absolute;
-    content: "";
-    width: 27px;
-    height: 27px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url("../img/icon-map-marker.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-  }
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   width: 27px;
+  //   height: 27px;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   background-image: url("../img/icon-map-marker.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-color: transparent;
+  // }
 
   @media (min-width: $tablet-width-min) {
     margin-bottom: 0;
@@ -33,31 +33,32 @@
 
 .map__img {
   width: 100%;
+  max-width: 1200px;
   height: 350px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #d5ef96;
-  background-image: url("../img/bg-map-mobile@1x.jpg");
+  // background-image: url("../img/bg-map-mobile@1x.jpg");
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/bg-map-mobile@2x.jpg");
-    background-size: 320px auto;
-  }
+  // @media (min-resolution: 2dppx) {
+  //   background-image: url("../img/bg-map-mobile@2x.jpg");
+  //   background-size: 320px auto;
+  // }
 
-  @media (min-width: $tablet-width-min) {
-    background-image: url("../img/bg-map-tablet@1x.jpg");
-    background-size: cover;
+  // @media (min-width: $tablet-width-min) {
+  //   background-image: url("../img/bg-map-tablet@1x.jpg");
+  //   background-size: cover;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/bg-map-tablet@2x.jpg");
-    }
-  }
+  //   @media (min-resolution: 2dppx) {
+  //     background-image: url("../img/bg-map-tablet@2x.jpg");
+  //   }
+  // }
 
-  @media (min-width: $desktop-width-min) {
-    background-image: url("../img/bg-map-desktop@1x.jpg");
+  // @media (min-width: $desktop-width-min) {
+  //   background-image: url("../img/bg-map-desktop@1x.jpg");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/bg-map-desktop@2x.jpg");
-    }
-  }
+  //   @media (min-resolution: 2dppx) {
+  //     background-image: url("../img/bg-map-desktop@2x.jpg");
+  //   }
+  // }
 }
