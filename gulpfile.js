@@ -44,7 +44,7 @@ const images = () => {
       imagemin.mozjpeg({quality: 75, progressive: true}),
       imagemin.svgo()
   ]))
- };
+};
 
 exports.images = images;
 
@@ -128,7 +128,6 @@ exports.server = server;
 function watcher() {
   gulp.watch("source/sass/**/*.scss", gulp.series("stylesDev"));
   livereload.listen();
-  // gulp.watch("source/*.html", gulp.series("html").on("change", sync.reload));
   gulp.watch("source/*.html", gulp.series("html")).on("change", sync.reload);
 }
 
