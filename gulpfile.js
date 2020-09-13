@@ -59,9 +59,9 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
-// Styles
+// Styles-build
 
-const styles = () => {
+const stylesBuild = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
@@ -70,13 +70,32 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(rename("styles.min.css"))
+    // .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
-exports.styles = styles;
+exports.stylesBuild = stylesBuild;
+
+// Styles-dev
+
+const stylesDev = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    // .pipe(postcss([
+    //   autoprefixer()
+    // ]))
+    // .pipe(csso())
+    // .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
+
+exports.stylesDev = stylesDev;
 
 // Server
 
@@ -97,18 +116,24 @@ exports.server = server;
 // Watcher
 
 function watcher() {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/sass/**/*.scss", gulp.series("stylesDev"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
-exports.default = gulp.series(
-  clean, copy, styles, sprite, server, watcher
-);
+
 
 // Build
 
 const build = gulp.series(
-  clean, copy, styles, images, sprite
+  clean, copy, stylesBuild, images, sprite
 );
 
 exports.build = build;
+
+// Start
+
+const start = gulp.series(
+  clean, copy, stylesDev, sprite, server, watcher
+);
+
+exports.start = start;
