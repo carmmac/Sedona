@@ -149,9 +149,21 @@
   }
 }
 
-.advantage__img {
+.advantage__img-wrapper {
   height: 260px;
   width: 100%;
+
+  @media (min-width: $tablet-width-min) {
+    width: 0;
+    height: 256px;
+    flex-grow: 1;
+  }
+}
+
+.advantage__img {
+  width: 320px;
+  height: 260px;
+  margin: 0 auto;
   line-height: 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -211,10 +223,13 @@
   }
 
   @media (min-width: $tablet-width-min) {
-    width: 0;
+    width: 100%;
+    margin: 0;
     height: 256px;
-    flex-grow: 1;
   }
+  //   width: 0;
+  //   flex-grow: 1;
+  // }
 }
 
 .advantage__details {
