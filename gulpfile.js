@@ -10,6 +10,7 @@ const sync = require("browser-sync").create();
 const del = require("del");
 const svgstore = require("gulp-svgstore");
 const imagemin = require("gulp-imagemin");
+const livereload = require("gulp-livereload");
 
 //Copy
 
@@ -17,8 +18,7 @@ const copy = () => {
   return gulp.src([
   "source/fonts/**/*.{woff,woff2}",
   "source/img/**",
-  "source/js/**",
-  "source/*.html"
+  "source/js/**"
   ], {
     base: "source"
   })
@@ -58,6 +58,16 @@ const sprite = () => {
 };
 
 exports.sprite = sprite;
+
+// Html copy
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"))
+    .pipe(livereload())
+};
+
+exports.html = html;
 
 // Styles-build
 
@@ -117,15 +127,15 @@ exports.server = server;
 
 function watcher() {
   gulp.watch("source/sass/**/*.scss", gulp.series("stylesDev"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  livereload.listen();
+  // gulp.watch("source/*.html", gulp.series("html").on("change", sync.reload));
+  gulp.watch("source/*.html", gulp.series("html")).on("change", sync.reload);
 }
-
-
 
 // Build
 
 const build = gulp.series(
-  clean, copy, stylesBuild, images, sprite
+  clean, copy, html, stylesBuild, images, sprite
 );
 
 exports.build = build;
@@ -133,7 +143,7 @@ exports.build = build;
 // Start
 
 const start = gulp.series(
-  clean, copy, stylesDev, sprite, server, watcher
+  clean, copy, html, stylesDev, sprite, server, watcher
 );
 
 exports.start = start;
